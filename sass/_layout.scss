@@ -1,0 +1,429 @@
+/*******************************************************************************
+ * _layout.scss
+ *
+ * The layout of the major regions (usually, but not necessarily Drupal regions)
+ * that components will be placed within. Layout styles for the theme's
+ * components should not be placed here and should instead be kept with the
+ * relevant SCSS for that component.
+ ******************************************************************************/
+
+@import "susy";
+
+// Settings
+
+$total-columns  : 10;
+$column-width   : 4em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+
+$tablet-portrait: 5;
+$tablet: 10;
+$break : 15;
+
+// Base Styles
+
+$base-font-size: 16px;
+$base-line-height: 25px;
+
+/*@include establish-baseline;*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.l-page {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: content-box;
+}
+
+div.quickbar-links, div#quickbar, div#quickbar * {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.l-header,
+.l-main,
+.l-footer {
+  *zoom: 1;
+  max-width: 75em;
+  _width: 75em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.l-header:after,
+.l-main:after,
+.l-footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.l-region--highlighted,
+.l-region--help,
+.l-region--slideshow,
+.l-region--sidebar-first,
+.l-region--sidebar-second {
+  margin-bottom: 20px;
+}
+
+body {
+    margin:0;
+    padding:0;
+    background:$main_background;
+}
+
+.site-slogan {
+    background: $green;
+    width:100%;
+    text-align: center;
+    padding-bottom:1em;
+    margin:0;
+    clear:none;
+    @include at-breakpoint(10) {
+      text-align: left;
+    }
+    @include at-breakpoint(12) {
+      margin-top:182px;
+      width: auto;
+      background: transparent;
+    }
+}
+.l-content {
+    margin-top:4em;
+    float:left;
+}
+
+h1 {
+    font-size:$big;
+    font-weight:bold;
+    clear: both;
+    margin-top:0;
+}
+h2 {
+    font-size:$medium;
+    font-weight:bold;
+    clear: both;
+}
+h3 {
+    font-size:$normal;
+    font-weight:bold;
+    margin-bottom:-.714em;
+    line-height: 1.416;
+    clear: both;
+}
+
+a {
+  color: $darkestgrey;
+  font-weight:bold;
+}
+
+a:hover {
+  color: $black;
+}
+
+hr {
+  border: 0;
+  width: 80%;
+  color: $green;
+  background-color: $green;
+}
+
+a img {
+  border:0;
+}
+
+.l-content {
+  background:$text_background;
+  @include at-breakpoint ($tablet) {
+      margin-top: 2em;
+    }
+  padding: 1em;
+}
+
+// Container
+.l-page {
+  @include container($tablet, $break);
+  //@include susy-grid-background;
+  @include set-container-width(10);
+  padding: 0;
+}
+/* .l-main {
+  @include boxit(vertical);
+}
+.l-content {
+  @include order(1);
+  margin-bottom:$gutter-width*2;
+}
+.l-region--sidebar-first {
+  @include order(3);
+  @include boxit(vertical);
+  .block--views-ds-progress-block--block {
+    @include order(1);
+  }
+  nav {
+    @include order(2);
+  }
+  .block--block--5 {
+    @include order(5);
+  }
+  .block--block--4 {
+    @include order(4);
+  }
+  .block--block--7 {
+    @include order(3);
+  }
+}
+.l-region--sidebar-second {
+  @include order(2);
+}
+.l-footer {
+  @include boxit(vertical);
+  .l-region--footer-right {
+    padding: 0 1em;
+    @include order(1);
+  }
+  .l-region--footer-left {
+    padding: 0 1em;
+    @include order(2);
+  }
+}*/
+
+.headwrap {
+  height: 189px;
+  background: url(../images/welle.png) repeat-x #fff;
+}
+.l-header {
+  $main-columns: 10;
+  // Domain Switcher
+  .block--domain-nav-default, .block--lang-dropdown,
+  .block--locale-language-content {
+    padding: 1em 0 0 1em;
+    @include at-breakpoint($tablet) {
+      @include span-columns(3, $main-columns);
+      margin:$gutter-width 0 0 $gutter-width;
+      padding: 0;
+    }
+    @include at-breakpoint($break) {
+      @include span-columns(3, 15);
+    }
+    ul {
+        list-style: none;
+        padding:0;
+    }
+  }
+
+// Search Form
+  .block--search-form {
+    @include span-columns(2 omega, $main-columns);
+    margin:.65em 0 0 -5%;
+    input {
+      height:20px;
+      font-size:12px;
+    }
+    .search-block-form input.form-submit {
+      background: url(../images/menu.png) -2px -76px no-repeat;
+      text-indent: -999em;
+      border:0;
+      box-shadow:none;
+    }
+  }
+
+// Logo und Bild
+  .l-branding {
+    @include span-columns(10 omega, $main-columns);
+    img {
+      margin:0;
+      float:left;
+    }
+  }
+}
+.l-region--bottom-left {
+  $main-columns: 10;
+  @include span-columns(10 omega, $main-columns);
+  color:$copyright_color;
+  font-size:$small;
+  p {
+    margin:1.8em 0 0 0;
+  }
+}
+.l-region--bottom-right {
+  $main-columns: 10;
+  @include span-columns(10 omega, $main-columns);
+  text-align: right;
+}
+
+.l-footer {
+  @include at-breakpoint($break) {
+    margin: 0 auto;
+  }
+}
+.block--block--1, .block--block-1 {
+  padding-left:$column-width+$gutter-width;
+  background:url(../images/eu.png) no-repeat;
+  font-size: $small;
+  margin-top: 2em;
+  line-height:1.416;
+  min-height:55px;
+  max-width:450px;
+}
+.l-region--footer-left {
+  $main-columns: 10;
+  @include span-columns(10 omega,$main-columns);
+  padding-left: $gutter-width;
+}
+.l-region--footer-right {
+  $main-columns: 10;
+  @include span-columns(10 omega,$main-columns);
+  padding-right: $gutter-width;
+}
+.block--menu-menu-footer-menu {
+  $main-columns: 10;
+  @include span-columns(10 omega,$main-columns);
+}
+.block--block--2, .block--block-2 {
+  $main-columns: 10;
+  @include span-columns(10 omega,$main-columns);
+  float:right;
+  width:auto;
+}
+
+// Layout
+@include at-breakpoint($tablet_portrait) {
+  .l-page {
+  padding:0 $grid-padding*2;
+}
+  .headwrap {
+    background: url(../images/welle_1920px.png) center bottom repeat-x #fff;
+  }
+  .l-footer {
+    .l-region--footer-left {
+      padding-right:0;
+    }
+    .l-region--footer-right {
+      padding-left:0;
+    }
+  }
+}
+
+@include at-breakpoint($tablet) {
+  @include with-grid-settings(10,4em,1em,0) {
+  .l-page {
+    @include set-container-width(15);
+    padding: 0 $gutter-width;
+  }
+  .l-header, .l-main, .l-footer {
+    @include set-container-width(15);
+  }
+  .l-header {
+  $main-columns: 10;
+  // Domain Switcher
+  .block--domain-nav-default, .block--lang-dropdown {
+    @include span-columns(1, $main-columns);
+  }
+
+// Search Form
+  .block--search-form {
+    @include span-columns(2, $main-columns);
+  }
+
+// Logo und Bild
+  .l-branding {
+    @include span-columns(7 omega, $main-columns);
+    img {
+      margin: 0 0 0 -10%;
+    }
+  }
+}
+  .l-main {
+    $main-columns: 10;
+    @include span-columns($main-columns omega, $tablet);
+    .l-content {
+      font-size:14px;
+      line-height:1.714;
+      padding-top:2em;
+      @include span-columns(6,$main-columns);
+      @include push(2, $main-columns);
+    }
+    .l-region--sidebar-first {
+      font-size:.75em;
+      line-height:1.416;
+      @include span-columns(2, $main-columns);
+      @include pull(8, $main-columns);
+      margin-top:5px;
+    }
+    .l-region--sidebar-second {
+      font-size:.75em;
+      line-height:1.416;
+      @include span-columns(2 omega, $main-columns);
+      margin-top:2.3em;
+    }
+  }
+  .l-region--bottom-left {
+  $main-columns: 10;
+  @include span-columns(5, $main-columns);
+  }
+  .l-region--bottom-right {
+  $main-columns: 10;
+  @include span-columns(5 omega, $main-columns);
+  }
+  .l-region--footer-left {
+    $main-columns: 10;
+    @include span-columns(4,$main-columns);
+  }
+  .l-region--footer-right {
+    $main-columns: 10;
+    @include span-columns(6 omega,$main-columns);
+  }
+  .block--menu-menu-footer-menu {
+    $main-columns: 6;
+    @include span-columns(6 omega,$main-columns);
+  }
+  /*  .l-footer {
+    display:table;
+  }*/
+}
+}
+
+@include at-breakpoint($break) {
+  .l-header, .l-main, .l-footer {
+    @include set-container-width(15);
+  }
+  // Logo und Bild
+  .l-branding {
+    img {
+      margin: 0 0 0 -5% !important;
+    }
+  }
+  $grid-padding   : 0;
+  .l-main {
+    margin-top:-1.5em;
+    $main-columns: 15;
+    @include span-columns(15 omega, $break);
+    .l-region--sidebar-first {
+      @include span-columns(3, $main-columns);
+      @include pull(12, $main-columns);
+      margin-top:5px;
+    }
+    .l-slideshow {
+      @include span-columns(12 omega,$main-columns);
+      @include pull(12, $main-columns);
+      @include push(3, $main-columns);
+      margin-top: 3em;
+    }
+    .l-content {
+      @include span-columns(9,$main-columns);
+      @include push(3, $main-columns);
+      background:$text_background;
+      margin-top: 4.2em;
+      padding: 2em;
+     }
+    .l-region--sidebar-second {
+      @include span-columns(3 omega, $main-columns);
+      margin-top:4.9em;
+    }
+  }
+}

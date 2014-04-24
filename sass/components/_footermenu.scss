@@ -1,0 +1,33 @@
+// Footer Menu
+.block--menu-menu-footer-menu {
+    font-size:$small;
+    margin: 1.5em 0;
+    ul {
+        float:right;
+        margin:0;
+    li {
+    list-style: none !important;
+    float:left;
+    margin-right: $gutter-width/2;
+    display: inline-block;
+    a {
+      color: $menu_color;
+      text-decoration: none;
+      display: inline-block;
+      padding-right: $gutter-width/2;
+      border-right:1px solid $menu_color;
+      font-weight:normal;
+      line-height:1;
+    }
+    a:hover {
+        color: $text_color;
+    }
+  }
+}
+  .last a{
+        border:none;
+  }
+  .active {
+    font-weight:700;
+  }
+}

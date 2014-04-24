@@ -1,0 +1,172 @@
+// Petition
+.form-item {
+    margin: 0;
+}
+.group-petitionbox {
+    margin: 0 -1em;
+    @include at-breakpoint ($break) {
+      margin: 0 -1em;
+    }
+    border: 10px solid #ccc;
+    /*border-radius: 26px;*/
+    background: #eee;
+    padding: 1em;
+    float: left;
+    position: relative;
+    h3 {
+        text-align: center;
+        font-size: 1.25em;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+    }
+}
+.webform-client-form {
+    width: 75%;
+    margin-left: 48px;
+    margin-top: 2em;
+    padding-bottom: 2em;
+    overflow: hidden;
+    label {
+        font-weight: normal;
+        font-size: $small;
+        top: 1px;
+        margin-left: 3px;
+    }
+}
+.webform-component-textfield,
+.webform-component-textfield input,
+.webform-component-email input,
+.webform-component-email {
+    width: 93%;
+}
+.select-or-other-other {
+    float: right;
+    width: 81%;
+}
+.webform-component {
+    @include at-breakpoint ($tablet) {
+    float: left;
+    width: 46%;
+    }
+    margin: 0 4% .5em 0;
+    position: relative;
+}
+.webform-component-textfield {
+    clear: left;
+}
+
+.webform-component-select {
+    select {
+	width: 175px;
+    }
+    @include at-breakpoint ($tablet) {
+    float: right;
+    text-align: right;
+    label {
+        margin: 0;
+    }
+    }
+}
+
+.webform-component-email, #webform-component-city {
+    clear: left;
+}
+
+#webform-component-i-want-more-info-by-email {
+   /* margin: -2.5em 4% 0.9em 0;
+    padding-right: 5px;
+    text-align: right;*/
+    float: left;
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    line-height: 1;
+}
+
+.webform-client-form-15 .form-actions {
+    @include at-breakpoint ($tablet) {
+    float: right;
+    text-align: right;
+    margin: -.7em 2% 0 0;
+    width: 46%;
+    }
+    input {
+        /*@include sassy-button("simple", 0, 12px, #83BE26, #83BE26, #fff, "false");*/
+        background: linear-gradient(#83BE26, #83BE26) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    border-radius: 0;
+    box-shadow: 0 1px 0 #A8DD54 inset;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.5em 1.5em;
+
+        font-size: $normal;
+        font-weight: bold;
+        border: 0;
+    }
+}
+.webform-component-markup {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    right: 1em;
+    width: auto;
+    font-size: $small;
+}
+.webform-confirm-email-response-form #edit-cancel {
+    display: none;
+}
+.field--name-field-petition-addendum {
+    clear: both;
+    float: left;
+    margin-top: $gutter-width;
+    font-size: $small;
+    line-height: 1.416;
+}
+
+.node--progress-bar-block {
+    background: $white;
+    padding: $gutter-width;
+    margin-bottom: $gutter-width;
+    h2 {
+        display: none;
+    }
+}
+.pgbar-wrapper {
+    margin-bottom: $gutter-width;
+}
+.pgbar-bg {
+    border-radius: 5px;
+    overflow: hidden;
+}
+.pgbar-current {
+    background: url(../images/schokobalken.png) top right $green;
+    height: 30px;
+}
+.front {
+    .l-content .views-row-1 a {
+        background: url(../images/Demand-Icon-1.png) left center no-repeat;
+    }
+    .l-content .views-row-2 a {
+        background: url(../images/Demand-Icon-2.png) left center no-repeat;
+    }
+    .l-content .views-row-3 a {
+        background: url(../images/Demand-Icon-3.png) left center no-repeat;
+    }
+    .l-content .views-row-4 a {
+        background: url(../images/Demand-Icon-4.png) left center no-repeat;
+    }
+}
+// Customize Add to any
+#block-addtoany-addtoany-button .block__title {
+    display: block;
+}
+#a2apage_any_email { display:none !important; } /* For standard sharing menu */
+#a2amail_any_email { display:none !important; } /* For the email-only menu */
+#a2apage_EMAIL { display:none !important; }
+#a2apage_BROWSER { display:none !important; }
+.addtoany_share_save { display: none !important;}
+.a2a_default_style a { padding: 0 15px 0 0;}

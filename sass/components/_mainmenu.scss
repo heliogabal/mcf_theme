@@ -1,0 +1,66 @@
+// Main Menu
+#block-system-main-menu {
+    background: $text-background;
+    clear:both;
+    margin-top:2em;
+    ul {
+        list-style-image:none;
+        list-style: none;
+        padding: 1em;
+        li {
+            text-align: right;
+            list-style-image:none;
+            list-style: none;
+            padding:0;
+            border-bottom: 1px solid $main_background;
+
+            a {
+                color: $menu_color;
+                display: block;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: .4em 2.2em .3em 0;
+                margin-right:-25px;
+                font-weight: normal;
+                font-size:1.25em;
+            }
+            a.active, a.active:hover, a:active {
+                background: url(../images/menu.png) right 0 no-repeat;
+            }
+            a:hover {
+                background: url(../images/menu.png) right -35px no-repeat;
+            }
+            ul {
+                padding: 0;
+                li {
+                    border:none;
+                    a {
+                        font-size: $small;
+                        text-transform: none;
+                        padding: .5em 2.9em .3em 0 !important;
+                        background: none;
+                        line-height:1.2;
+                    }
+                    a.active, a.active:hover, a:active {
+                        background: url(../images/menu.png) right -3px /*center*/ no-repeat;
+                    }
+                    a:hover {
+                        background:url(../images/menu.png) right -38px no-repeat;
+                    }
+                }
+            }
+        }
+        li.expanded a {
+            padding-bottom: 0;
+        }
+        li.last {
+            border:none;
+        }
+        ul li.last {
+            padding-bottom:1em;
+        }
+        .active {
+            font-weight:700;
+        }
+    }
+}

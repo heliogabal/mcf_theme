@@ -1,0 +1,81 @@
+// Demands
+.page-demands {
+    .views-row h2 {
+        padding-left: 50px;
+        min-height: 38px;
+    }
+    .views-row-1 h2 {
+        background: url(../images/Demand-Icon-1.png) left center no-repeat;
+    }
+    .views-row-2 h2{
+        background: url(../images/Demand-Icon-2.png) left center no-repeat;
+    }
+    .views-row-3 h2 {
+        background: url(../images/Demand-Icon-3.png) left center no-repeat;
+    }
+    .views-row-4 h2 {
+        background: url(../images/Demand-Icon-4.png) left center no-repeat;
+    }
+    .views-row article header {
+        display:none;
+        min-height:0;
+        height:0;
+    }
+}
+.ui-accordion .ui-accordion-header .ui-icon {
+    right: 0.5em !important;
+    left:auto !important;
+}
+.ui-accordion-icons .ui-accordion-header a {
+    padding-left: 50px !important;
+    margin-right:15px !important;
+    min-height: 44px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: none !important;
+    border: 0 !important;
+    margin-bottom:1em;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, .ui-widget-content {
+    border:0 !important;
+    background: none !important;
+}
+.ui-accordion .ui-accordion-content {
+    padding:0 25px 0 50px !important;
+}
+.view-demands .ui-widget-content p {
+    margin-top:0;
+}
+.ui-widget {
+    font-size: 14px;
+    font-family: "Noto Sans", sans-serif;
+}
+.l-content {
+    ol {
+        padding:0;
+        li {
+            display: inline-block;
+            list-style: none;
+            margin-bottom:1em;
+            a {
+                vertical-align:middle;
+                text-decoration: none;
+                display: block;
+                line-height: 22px;
+                font-weight: normal;
+            }
+            img {
+                float:left;
+                border:0;
+                margin-right:5px;
+            }
+        }
+    }
+}
+#cboxClose {
+    border-radius:0;
+    box-shadow:none;
+}
+#cboxContent header {
+    display:none;
+}

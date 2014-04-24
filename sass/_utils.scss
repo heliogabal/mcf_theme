@@ -1,0 +1,93 @@
+/*******************************************************************************
+ * _utils.scss
+ *
+ * Sass offers come very useful features, these include variables functions and
+ * mixins. Extensions such as Compass and Susy can also be used to provide extra
+ * functions and mixins to be used throughout the theme. This file acts as a
+ * single place for defining these things, which can then be accessed by
+ * importing _utils.scss where required. The following should be defined in this
+ * file:
+ * - Custom Sass mixins for the theme.
+ * - Custom Sass functions for the theme.
+ * - Overriding the default variables provided by extensions such as Compass.
+ * - Defining new variables for:
+ *      - Colors.
+ *      - Font sizes and families.
+ *      - Layout and grid sizing.
+ ******************************************************************************/
+
+/*@import "sassy-buttons";*/
+
+// Colors
+$green: #83BE26;
+$text_green: #72a522;
+$grey: #E2E2E2;
+$lightgrey: #eeeded;
+$darkgrey: #999;
+$darkestgrey: #464749;
+$white: #fff;
+$black: #000;
+$orange: #F39200;
+$sign: #C52E00;
+$donate: #7B3F06;
+
+$main_background: $green;
+$text_background: $white;
+$footer_background: $grey;
+$text_color: $black;
+$menu_color: $darkestgrey;
+$copyright_color: $lightgrey;
+$footer_color: $text_green;
+$text_invert: $white;
+$link_color: $green;
+
+// Font sizes
+$small: 12px;
+$normal: 1em;
+$medium: 1.17em;
+$big: 1.5em;
+
+@mixin line-break {
+    -ms-word-break: break-word;
+    word-break: break-word;
+
+    // Non standard for webkit
+    word-break: break-word;
+
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    -webkit-hyphenate-character:"\2010";
+    hyphenate-character:"\2010";
+    -webkit-hyphenate-limit-after:3;
+    -webkit-hyphenate-limit-before:3;
+    hyphenate-before: 3;
+    hyphenate-after: 3;
+    hyphenate-lines:2;
+}
+
+@mixin boxit ($dir) {
+    display:box;
+    display:-webkit-box;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:-webkit-flex;
+    display:flexbox;
+    display:flex;
+    box-orient:$dir;
+    -moz-box-orient:$dir;
+    -webkit-box-orient:$dir;
+}
+
+@mixin order ($num) {
+    box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -webkit-box-ordinal-group: 1;
+    flexorder: 1;
+    order: 1;
+    box-ordinal-group: #{$num};
+    -moz-box-ordinal-group: #{$num};
+    -webkit-box-ordinal-group: #{$num};
+    flexorder: #{$num};
+    order: #{$num};
+}

@@ -1,0 +1,38 @@
+/* Country Switcher */
+.dd_after .ddTitle {
+    background: $white;
+    padding:0;
+    height:17px;
+    width:45px;
+    border:0;
+}
+.dd_after .ddTitle span.arrow {
+    background: url("../images/dd_arrow.gif") no-repeat scroll 0 0 transparent;
+}
+.dd_after .ddChild {
+    border:0;
+    box-shadow: 1px 1px 5px #ccc;
+    width:32px !important;
+    height: auto !important;
+}
+.dd_after .ddChild a {
+    padding:0 0 2px 0;
+    line-height: 21px;
+}
+.ddChild span, .ddTitleText span {
+    display:none;
+}
+/* Language Switcher */
+.language-switcher-locale-url {
+    list-style: none;
+    @include at-breakpoint(10) {
+        @include span-columns(6, 10);
+    }
+    @include at-breakpoint(15) {
+        @include span-columns(10, 15);
+    }
+    li {
+        float: left;
+        width: 35px;
+    }
+}
