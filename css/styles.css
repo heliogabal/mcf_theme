@@ -331,25 +331,15 @@ a img {
 
 .l-header .block--domain-nav-default, .l-header .block--lang-dropdown,
 .l-header .block--locale-language-content {
-  padding: 1em 0 0 1em;
-}
-@media (min-width: 49em) {
-  .l-header .block--domain-nav-default, .l-header .block--lang-dropdown,
-  .l-header .block--locale-language-content {
-    width: 28.57143%;
-    float: left;
-    margin-right: 2.04082%;
-    margin: 1em 0 0 1em;
+  padding: .5em 0 0 1em;
+  /*@include at-breakpoint($tablet) {
+    @include span-columns(3, $main-columns);
+    margin:$gutter-width 0 0 $gutter-width;
     padding: 0;
   }
-}
-@media (min-width: 74em) {
-  .l-header .block--domain-nav-default, .l-header .block--lang-dropdown,
-  .l-header .block--locale-language-content {
-    width: 18.91892%;
-    float: left;
-    margin-right: 1.35135%;
-  }
+  @include at-breakpoint($break) {
+    @include span-columns(3, 15);
+  }*/
 }
 .l-header .block--domain-nav-default ul, .l-header .block--lang-dropdown ul,
 .l-header .block--locale-language-content ul {
@@ -1699,7 +1689,6 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
 /* Language Switcher */
 .language-switcher-locale-url {
   list-style: none;
-  margin-top: 1.5em;
   /*@include at-breakpoint(10) {
       @include span-columns(6, 10);
   }

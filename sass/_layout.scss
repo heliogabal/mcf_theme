@@ -160,15 +160,15 @@ a img {
   // Domain Switcher
   .block--domain-nav-default, .block--lang-dropdown,
   .block--locale-language-content {
-    padding: 1em 0 0 1em;
-    @include at-breakpoint($tablet) {
+    padding: .5em 0 0 1em;
+    /*@include at-breakpoint($tablet) {
       @include span-columns(3, $main-columns);
       margin:$gutter-width 0 0 $gutter-width;
       padding: 0;
     }
     @include at-breakpoint($break) {
       @include span-columns(3, 15);
-    }
+    }*/
     ul {
         list-style: none;
         padding:0;
