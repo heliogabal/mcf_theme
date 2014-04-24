@@ -1,0 +1,152 @@
+/* Action Links Blocks */
+.block--block-10 a, .block--block-11 a, .block--block-12 a {
+    text-decoration: none;
+    font-size:19px;
+    font-weight:normal;
+    letter-spacing: -.09em;
+    float:right;
+    height:31px;
+    padding: 2px 41px 0 0;
+    margin-top:5px;
+    text-shadow: 1px 1px 1px #f3f3f3, 1px -1px 1px #f3f3f3, -1px 1px 1px #f3f3f3, -1px -1px 1px #f3f3f3;
+}
+.block--block-10 a:hover, .block--block-11 a:hover, .block--block-12 a:hover {
+    text-shadow: -1px -1px 1px #fff,
+    1px -1px 1px #fff,
+    -1px 1px 1px #fff,
+    1px 1px 1px #fff;
+}
+.block--block-10 p, .block--block-11 p, .block--block-12 p {
+    overflow:hidden;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+/* Sign Petition Block */
+/* with images */
+.block--block--3 a, .block--block--7 a,.block--block-3 a, .block--block-7 a {
+    background:url(../images/actions.gif) 0 0 no-repeat;
+    width: 175px;
+    height:36px;
+    text-indent:-999em;
+    display: block;
+    float: right;
+    margin-right: -5px;
+}
+.block--block--3 a:hover, .block--block--7 a,.block--block-3 a:hover, .block--block-7 a {
+    background-position: -174px 0;
+}
+/* without images */
+.block--block-10 a {
+    color: $sign;
+}
+.front .block--block-10 a, .not-front .block--block-10 a:hover {
+    background:url(../images/action_icons.gif) right top no-repeat;
+    text-shadow: 1px 1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff, -1px -1px 1px #fff;
+}
+.not-front .block--block-10 a {
+    background:url(../images/action_icons.gif) right -93px no-repeat;
+}
+
+// Get Newsletter Block
+// with images
+.block--block--4 a, .block--block--8 a,.block--block-4 a, .block--block-8 a {
+    background:url(../images/actions.gif) 0 -36px no-repeat;
+    width: 175px;
+    height:35px;
+    text-indent:-999em;
+    display: block;
+    float: right;
+    margin-right: -5px;
+    }
+.block--block--4 a:hover, .block--block--8 a,.block--block-4 a:hover, .block--block-8 a {
+    background-position: -174px -36px;
+    }
+// without images
+.block--block-11 a {
+    color: $orange;
+}
+.section-get-newsletter .block--block-11 a,
+.section-newsletter .block--block-11 a,
+ .block--block-11 a:hover {
+    background:url(../images/action_icons.gif) right -31px no-repeat;
+    text-shadow: 1px 1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff, -1px -1px 1px #fff;
+}
+.block--block-11 a {
+    background:url(../images/action_icons.gif) right -125px no-repeat;
+}
+
+.form-item-mail {
+    float:left;
+}
+.simplenews-subscribe input[type=submit]{
+        @include sassy-button("simple", 0, 12px, #83BE26, #83BE26, #fff, "false");
+        font-size:$normal;
+        font-weight: bold;
+        border:0;
+        float:left;
+        margin:1.7em 0 0 1em;
+    }
+
+.issues-link {
+    clear:both;
+}
+
+// Donate Now Block
+.block--block--5 a, .block--block--9 a, .block--block-5 a, .block--block-9 a {
+    background:url(../images/actions.gif) 0 -71px no-repeat;
+    width: 175px;
+    height:40px;
+    text-indent:-999em;
+    display: block;
+    float: right;
+    margin-bottom:16px;
+    margin-right: -5px;
+}
+.block--block--5 a:hover, .block--block--9 a, .block--block-5 a:hover, .block--block-9 a {
+    background-position: -174px -71px;
+}
+
+// without images
+.block--block-12 a {
+    color: $donate;
+}
+.section-donate .block--block-12 a,
+.section-donate-now .block--block-12 a,
+.section-spenden .block--block-12 a,
+.block--block-12 a:hover {
+    background:url(../images/action_icons.gif) right -62px no-repeat;
+    text-shadow: 1px 1px 1px #fff, 1px -1px 1px #fff, -1px 1px 1px #fff, -1px -1px 1px #fff;
+}
+.block--block-12 a {
+    background:url(../images/action_icons.gif) right -156px no-repeat;
+}
+
+// News and Events Block
+.block--views-news-events-block {
+    article {
+        background:$text-background;
+        padding:$gutter-width;
+        margin-bottom:$gutter-width;
+    }
+    p {
+        @include line-break;
+    }
+    h2 {
+        a {
+            text-decoration: none;
+            color: $orange;
+            font-weight:normal;
+        }
+    }
+    footer {
+        display:none;
+    }
+    .node-readmore {
+        margin-bottom: 1em;
+    }
+}
+.node--news-events--teaser img {
+    float: left;
+    margin: .2em 1em 0 0;
+}

@@ -1,0 +1,47 @@
+/* Co-Sponsors View */
+.co-sponsors {
+  float: left;
+  position: relative;
+  margin-bottom: 2em;
+  min-height: 250px;
+  h3 {
+    margin-bottom:1em;
+  }
+  img {
+    margin: .4em .9em 0 0;
+    float: left;
+  }
+  .edit {
+    position: absolute;
+    left: 0;
+    top: -2.5em;
+  }
+}
+  li.views-fluid-grid-item {
+    background: none;
+    padding: 0;
+    position: relative;
+    height: 120px;
+    border: 1px solid #ddd;
+    margin-bottom: 0.6em;
+    margin-right: 0.4em;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+.node--co-sponsor {
+  img, .field--name-field-co-sponor-logo {
+    float: right;
+    width: 250px;
+    margin-left: 1em;
+  }
+}
+div.views-fluid-grid h3 {
+  text-align: left;
+  margin-bottom: 1em;
+}

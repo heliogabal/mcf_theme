@@ -1,0 +1,30 @@
+/* Disable WYSIWYG HTML HELP */
+.filter-wrapper {
+  display: none !important;
+}
+
+/* Disable Add Media Button */
+#cke_28 {
+  display: none;
+}
+
+/* CKEditor fixes */
+body.cke_show_borders {
+  background: $text_background;
+  font-size: 14px;
+}
+body.cke_ltr, body.cke_editable {
+  background: $text_background;
+}
+
+/* WYSIWYG Floating Classes */
+.floatleft {
+  clear: both;
+  float: left;
+  margin: 5px 1.5em 5px 0;
+}
+.floatright {
+  clear: both;
+  float: right;
+  margin: 5px 0 5px 1.5em;
+}

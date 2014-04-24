@@ -1,0 +1,29 @@
+// Footer
+.footwrap {
+    color: $footer_color;
+    background: $footer_background;
+    overflow:hidden;
+}
+// EU Blob
+.l-region--footer-left {
+    margin-bottom: $gutter-width;
+}
+
+// Funders Logos Block
+.block--block--2, .block--block-2 {
+  font-size: $small;
+  display: table-cell;
+  margin-top:$gutter-width;
+  margin-bottom:$gutter-width;
+  img {
+    vertical-align: middle;
+    margin-bottom:-.7em;
+  }
+  p, p span{
+    vertical-align: bottom;
+  }
+  p span {
+    margin-bottom:1px;
+    display: inline-block;
+  }
+}
