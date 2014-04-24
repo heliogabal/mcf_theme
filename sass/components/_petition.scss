@@ -11,11 +11,7 @@
     /*border-radius: 26px;*/
     background: #eee;
     padding: 1em;
-<<<<<<< HEAD
     /*float: left;*/
-=======
-    float: left;
->>>>>>> origin/master
     position: relative;
     h3 {
         text-align: center;
@@ -95,11 +91,8 @@
     width: 46%;
     }
     input {
-<<<<<<< HEAD
-        @include sassy-button("simple", 0, 12px, #83BE26, #83BE26, #fff, "false");
-=======
-        /*@include sassy-button("simple", 0, 12px, #83BE26, #83BE26, #fff, "false");*/
-        background: linear-gradient(#83BE26, #83BE26) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    @include sassy-button("simple", 0, 12px, #83BE26, #83BE26, #fff, "false");
+    background: linear-gradient(#83BE26, #83BE26) repeat scroll 0 0 rgba(0, 0, 0, 0);
     border: 0 none;
     border-radius: 0;
     box-shadow: 0 1px 0 #A8DD54 inset;
@@ -109,8 +102,6 @@
     font-size: 1em;
     font-weight: bold;
     padding: 0.5em 1.5em;
-
->>>>>>> origin/master
         font-size: $normal;
         font-weight: bold;
         border: 0;
@@ -178,7 +169,6 @@
 #a2apage_BROWSER { display:none !important; }
 .addtoany_share_save { display: none !important;}
 .a2a_default_style a { padding: 0 15px 0 0;}
-<<<<<<< HEAD
 
 
 /* Petition Block */
@@ -232,5 +222,3 @@
         width: 60%;
     }
 }
-=======
->>>>>>> origin/master

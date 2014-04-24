@@ -12,11 +12,8 @@
  ******************************************************************************/
 // border-box-sizing()
 // @include box-sizing(border-box);
-<<<<<<< HEAD
+
 @import "sassy-buttons";
-=======
-//@import "sassy-buttons";
->>>>>>> origin/master
 
 body {
   font-family: "Noto Sans", sans-serif;
@@ -24,10 +21,7 @@ body {
 
 button, input[type=submit] {
   margin-right: 1em;
-<<<<<<< HEAD
-  @include sassy-button("simple", 0, 12px, #83BE26, #83BE26, #fff, "false")
-=======
-  /*@include sassy-button("simple", 0, 12px, #83BE26, #83BE26, #fff, "false")*/
+  @include sassy-button("simple", 0, 12px, #83BE26, #83BE26, #fff, "false");
   background: linear-gradient(#83BE26, #83BE26) repeat scroll 0 0 rgba(0, 0, 0, 0);
     border: 0 none;
     border-radius: 0;
@@ -38,7 +32,6 @@ button, input[type=submit] {
     font-size: 1em;
     font-weight: bold;
     padding: 0.5em 1.5em;
->>>>>>> origin/master
 }
 strong, b {
   font-weight: bold;
@@ -63,14 +56,11 @@ table {
 #preview-wrapper {
   height: 320px;
 }
-<<<<<<< HEAD
 /* Image scale */
 img {
   max-width: 100%;
   height: auto;
 }
-=======
->>>>>>> origin/master
 /* Image captions */
 .caption p {
   font-size: .8em;

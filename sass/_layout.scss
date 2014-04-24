@@ -25,11 +25,7 @@ $break : 15;
 $base-font-size: 16px;
 $base-line-height: 25px;
 
-<<<<<<< HEAD
 @include establish-baseline;
-=======
-/*@include establish-baseline;*/
->>>>>>> origin/master
 
 * {
     -webkit-box-sizing: border-box;
@@ -68,10 +64,7 @@ div.quickbar-links, div#quickbar, div#quickbar * {
 
 .l-region--highlighted,
 .l-region--help,
-<<<<<<< HEAD
-=======
 .l-region--slideshow,
->>>>>>> origin/master
 .l-region--sidebar-first,
 .l-region--sidebar-second {
   margin-bottom: 20px;
@@ -80,47 +73,28 @@ div.quickbar-links, div#quickbar, div#quickbar * {
 body {
     margin:0;
     padding:0;
-<<<<<<< HEAD
     background: $main_background;
-=======
-    background:$main_background;
->>>>>>> origin/master
 }
 
 .site-slogan {
     background: $green;
-<<<<<<< HEAD
     width: 100%;
     text-align: left;
     padding: 1em 2em;
-=======
-    width:100%;
-    text-align: center;
-    padding-bottom:1em;
->>>>>>> origin/master
     margin:0;
     clear:none;
     @include at-breakpoint(10) {
       text-align: left;
     }
     @include at-breakpoint(12) {
-<<<<<<< HEAD
       /*margin-top:182px;*/
-=======
-      margin-top:182px;
->>>>>>> origin/master
       width: auto;
       background: transparent;
     }
 }
 .l-content {
-<<<<<<< HEAD
     margin-top: 4em;
     /*float: left;*/
-=======
-    margin-top:4em;
-    float:left;
->>>>>>> origin/master
 }
 
 h1 {
@@ -177,66 +151,15 @@ a img {
   @include set-container-width(10);
   padding: 0;
 }
-<<<<<<< HEAD
 .headwrap {
   height: 199px;
   background: url(../images/welle.png) center bottom repeat-x #fff;
-=======
-/* .l-main {
-  @include boxit(vertical);
-}
-.l-content {
-  @include order(1);
-  margin-bottom:$gutter-width*2;
-}
-.l-region--sidebar-first {
-  @include order(3);
-  @include boxit(vertical);
-  .block--views-ds-progress-block--block {
-    @include order(1);
-  }
-  nav {
-    @include order(2);
-  }
-  .block--block--5 {
-    @include order(5);
-  }
-  .block--block--4 {
-    @include order(4);
-  }
-  .block--block--7 {
-    @include order(3);
-  }
-}
-.l-region--sidebar-second {
-  @include order(2);
-}
-.l-footer {
-  @include boxit(vertical);
-  .l-region--footer-right {
-    padding: 0 1em;
-    @include order(1);
-  }
-  .l-region--footer-left {
-    padding: 0 1em;
-    @include order(2);
-  }
-}*/
-
-.headwrap {
-  height: 189px;
-  background: url(../images/welle.png) repeat-x #fff;
->>>>>>> origin/master
 }
 .l-header {
   $main-columns: 10;
   // Domain Switcher
-<<<<<<< HEAD
-  .block--domain-nav-default {
-=======
   .block--domain-nav-default, .block--lang-dropdown,
   .block--locale-language-content {
->>>>>>> origin/master
     padding: 1em 0 0 1em;
     @include at-breakpoint($tablet) {
       @include span-columns(3, $main-columns);
@@ -251,7 +174,6 @@ a img {
         padding:0;
     }
   }
-<<<<<<< HEAD
 // Logo und Bild
   .l-branding {
     @include span-columns(10 omega, $main-columns);
@@ -299,34 +221,6 @@ a img {
       margin-top: 2.3em;
     }
   }
-=======
-
-// Search Form
-  .block--search-form {
-    @include span-columns(2 omega, $main-columns);
-    margin:.65em 0 0 -5%;
-    input {
-      height:20px;
-      font-size:12px;
-    }
-    .search-block-form input.form-submit {
-      background: url(../images/menu.png) -2px -76px no-repeat;
-      text-indent: -999em;
-      border:0;
-      box-shadow:none;
-    }
-  }
-
-// Logo und Bild
-  .l-branding {
-    @include span-columns(10 omega, $main-columns);
-    img {
-      margin:0;
-      float:left;
-    }
-  }
-}
->>>>>>> origin/master
 .l-region--bottom-left {
   $main-columns: 10;
   @include span-columns(10 omega, $main-columns);
@@ -383,11 +277,7 @@ a img {
   padding:0 $grid-padding*2;
 }
   .headwrap {
-<<<<<<< HEAD
     /*background: url(../images/welle_1920px.png) center bottom repeat-x #fff;*/
-=======
-    background: url(../images/welle_1920px.png) center bottom repeat-x #fff;
->>>>>>> origin/master
   }
   .l-footer {
     .l-region--footer-left {
@@ -411,7 +301,6 @@ a img {
   .l-header {
   $main-columns: 10;
   // Domain Switcher
-<<<<<<< HEAD
   .l-region--header /* , .block--domain-nav-default, .block--lang-dropdown*/ {
     @include span-columns(2, $main-columns);
   }
@@ -436,36 +325,16 @@ a img {
     background: transparent;
     padding: 0;
     @include span-columns(5 omega, $main-columns);
-=======
-  .block--domain-nav-default, .block--lang-dropdown {
-    @include span-columns(1, $main-columns);
-  }
-
-// Search Form
-  .block--search-form {
-    @include span-columns(2, $main-columns);
-  }
-
-// Logo und Bild
-  .l-branding {
-    @include span-columns(7 omega, $main-columns);
-    img {
-      margin: 0 0 0 -10%;
-    }
->>>>>>> origin/master
   }
 }
   .l-main {
     $main-columns: 10;
     @include span-columns($main-columns omega, $tablet);
-<<<<<<< HEAD
     .l-region--slideshow {
       @include span-columns(8 omega,$main-columns);
       margin-left: 0;
       margin-top: 1.5em;
     }
-=======
->>>>>>> origin/master
     .l-content {
       font-size:14px;
       line-height:1.714;
@@ -477,15 +346,10 @@ a img {
       font-size:.75em;
       line-height:1.416;
       @include span-columns(2, $main-columns);
-<<<<<<< HEAD
       /*@include pull(8, $main-columns);*/
       @include isolate(0);
       margin-left: 0;
       margin-top: 5px;
-=======
-      @include pull(8, $main-columns);
-      margin-top:5px;
->>>>>>> origin/master
     }
     .l-region--sidebar-second {
       font-size:.75em;
@@ -521,7 +385,7 @@ a img {
 }
 
 @include at-breakpoint($break) {
-<<<<<<< HEAD
+
 .front {
   .l-main {
     margin-top: 0 !important;
@@ -533,9 +397,6 @@ a img {
     margin-top: 0 !important;
   }
 }
-
-=======
->>>>>>> origin/master
   .l-header, .l-main, .l-footer {
     @include set-container-width(15);
   }
@@ -550,7 +411,6 @@ a img {
     margin-top:-1.5em;
     $main-columns: 15;
     @include span-columns(15 omega, $break);
-<<<<<<< HEAD
     .l-region--slideshow {
       @include span-columns(12 omega,$main-columns);
       /*@include push(3, $main-columns);*/
@@ -564,21 +424,6 @@ a img {
       margin-top: 5px;
     }
     .l-content { @include span-columns(9,$main-columns);
-=======
-    .l-region--sidebar-first {
-      @include span-columns(3, $main-columns);
-      @include pull(12, $main-columns);
-      margin-top:5px;
-    }
-    .l-slideshow {
-      @include span-columns(12 omega,$main-columns);
-      @include pull(12, $main-columns);
-      @include push(3, $main-columns);
-      margin-top: 3em;
-    }
-    .l-content {
-      @include span-columns(9,$main-columns);
->>>>>>> origin/master
       @include push(3, $main-columns);
       background:$text_background;
       margin-top: 4.2em;
@@ -586,11 +431,7 @@ a img {
      }
     .l-region--sidebar-second {
       @include span-columns(3 omega, $main-columns);
-<<<<<<< HEAD
       margin-top: 4.9em;
-=======
-      margin-top:4.9em;
->>>>>>> origin/master
     }
   }
 }

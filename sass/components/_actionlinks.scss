@@ -80,11 +80,8 @@
     float:left;
 }
 .simplenews-subscribe input[type=submit]{
-<<<<<<< HEAD
         @include sassy-button("simple", 0, 12px, #83BE26, #83BE26, #fff, "false");
-=======
-        /*@include sassy-button("simple", 0, 12px, #83BE26, #83BE26, #fff, "false");*/
-        background: linear-gradient(#83BE26, #83BE26) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: linear-gradient(#83BE26, #83BE26) repeat scroll 0 0 rgba(0, 0, 0, 0);
     border: 0 none;
     border-radius: 0;
     box-shadow: 0 1px 0 #A8DD54 inset;
@@ -94,8 +91,6 @@
     font-size: 1em;
     font-weight: bold;
     padding: 0.5em 1.5em;
-
->>>>>>> origin/master
         font-size:$normal;
         font-weight: bold;
         border:0;
