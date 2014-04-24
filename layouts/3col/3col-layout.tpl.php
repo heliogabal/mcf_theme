@@ -23,9 +23,6 @@
 </div>
 <div class="l-page">
   <div class="l-main">
-    <div class="l-slideshow">
-      <?php print render($page['slideshow']); ?>
-    </div>
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>
       <!--<?php print $breadcrumb; ?>-->
