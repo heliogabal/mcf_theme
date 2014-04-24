@@ -1858,3 +1858,37 @@ div.views-fluid-grid h3 {
   border: 0;
   box-shadow: none;
 }
+
+.flexslider {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+.flexslider .views-field-title {
+  position: absolute;
+  bottom: 0;
+  padding: 0 1em 1em;
+  background: #fff;
+  opacity: .8;
+  width: 100%;
+}
+.flexslider .views-field-title a {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.flex-direction-nav a:before {
+  line-height: 1;
+}
+
+/*.front {
+  .l-main {
+    margin-top: 0 !important;
+  }
+  .l-content {
+    margin-top: 0 !important;
+  }
+  .l-region--sidebar-second {
+    margin-top: 0 !important;
+  }
+}*/
