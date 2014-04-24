@@ -25,13 +25,21 @@
 /* Language Switcher */
 .language-switcher-locale-url {
     list-style: none;
+<<<<<<< HEAD
     margin-top: 1.5em;
     /*@include at-breakpoint(10) {
+=======
+    @include at-breakpoint(10) {
+>>>>>>> origin/master
         @include span-columns(6, 10);
     }
     @include at-breakpoint(15) {
         @include span-columns(10, 15);
+<<<<<<< HEAD
     }*/
+=======
+    }
+>>>>>>> origin/master
     li {
         float: left;
         width: 35px;

@@ -43,7 +43,6 @@
       <?php print render($page['content']); ?>
       <!--<?php print $feed_icons; ?>-->
     </div>
-
     <?php print render($page['sidebar_second']); ?>
   </div>
   <div class="l-bottom" role="bottom">
