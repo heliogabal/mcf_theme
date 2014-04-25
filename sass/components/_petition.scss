@@ -216,8 +216,11 @@
     .webform-component {
         margin: 0 4% 0 0;
     }
+    .webform-component-select select {
+        width: 160px;
+    }
     #webform-component-i-want-more-info-by-email {
-        position: absolute;
+        position: static;
         float: left;
         width: 60%;
     }

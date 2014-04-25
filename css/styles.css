@@ -368,11 +368,30 @@ a img {
 .l-header .l-region--navigation {
   background: #fff;
   padding: 0 2em;
+  margin-bottom: 1em;
   width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: -1em;
   display: inline;
+}
+@media (min-width: 49em) {
+  .l-header .l-region--navigation {
+    width: 79.59184%;
+    float: right;
+    margin-right: 0;
+    margin-left: 20.40816%;
+  }
+}
+@media (min-width: 69em) {
+  .l-header .l-region--navigation {
+    background: transparent;
+    padding: 0;
+    width: 48.97959%;
+    float: right;
+    margin-right: 0;
+    margin-left: 0%;
+  }
 }
 
 .l-main {
@@ -527,6 +546,11 @@ a img {
     /* .block--search-form {
        @include span-columns(2, $main-columns);
      }*/
+    /*.l-region--navigation {
+      background: transparent;
+      padding: 0;
+      @include span-columns(5 omega, $main-columns);
+    }*/
   }
   .l-header .l-region--header {
     width: 18.36735%;
@@ -544,13 +568,7 @@ a img {
   }
   .l-header .l-branding .site-slogan {
     padding: 0 0 1em .5em;
-  }
-  .l-header .l-region--navigation {
-    background: transparent;
-    padding: 0;
-    width: 48.97959%;
-    float: right;
-    margin-right: 0;
+    white-space: nowrap;
   }
 
   .l-main {
@@ -1564,8 +1582,11 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
 .view-petition-block .webform-component {
   margin: 0 4% 0 0;
 }
+.view-petition-block .webform-component-select select {
+  width: 160px;
+}
 .view-petition-block #webform-component-i-want-more-info-by-email {
-  position: absolute;
+  position: static;
   float: left;
   width: 60%;
 }

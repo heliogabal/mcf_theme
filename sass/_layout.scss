@@ -190,7 +190,24 @@ a img {
   .l-region--navigation {
     background: #fff;
     padding: 0 2em;
+    margin-bottom: 1em;
     @include span-columns(10 omega, $main-columns);
+  }
+  @include at-breakpoint(10) {
+    .l-region--navigation {
+        $main-columns: 10;
+        @include span-columns(8 omega, $main-columns);
+        @include push(2);
+      }
+  }
+  @include at-breakpoint(14) {
+    .l-region--navigation {
+    background: transparent;
+    padding: 0;
+    $main-columns: 10;
+    @include span-columns(5 omega, $main-columns);
+    @include push(0);
+  }
   }
 }
 .l-main {
@@ -319,13 +336,14 @@ a img {
     }
     .site-slogan {
       padding: 0 0 1em .5em;
+      white-space: nowrap;
     }
   }
-  .l-region--navigation {
+  /*.l-region--navigation {
     background: transparent;
     padding: 0;
     @include span-columns(5 omega, $main-columns);
-  }
+  }*/
 }
   .l-main {
     $main-columns: 10;
@@ -385,7 +403,6 @@ a img {
 }
 
 @include at-breakpoint($break) {
-
 .front {
   .l-main {
     margin-top: 0 !important;
