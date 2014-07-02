@@ -80,7 +80,7 @@
     float:left;
 }
 .simplenews-subscribe input[type=submit]{
-        @include sassy-button("simple", 0, 12px, #83BE26, #83BE26, #fff, "false");
+        //@include sassy-button("simple", 0, 12px, #83BE26, #83BE26, #fff, "false");
     background: linear-gradient(#83BE26, #83BE26) repeat scroll 0 0 rgba(0, 0, 0, 0);
     border: 0 none;
     border-radius: 0;

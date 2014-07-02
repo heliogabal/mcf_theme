@@ -13,7 +13,7 @@
 // border-box-sizing()
 // @include box-sizing(border-box);
 
-@import "sassy-buttons";
+//@import "sassy-buttons";
 
 body {
   font-family: "Noto Sans", sans-serif;
@@ -21,7 +21,7 @@ body {
 
 button, input[type=submit] {
   margin-right: 1em;
-  @include sassy-button("simple", 0, 12px, #83BE26, #83BE26, #fff, "false");
+  //@include sassy-button("simple", 0, 12px, #83BE26, #83BE26, #fff, "false");
   background: linear-gradient(#83BE26, #83BE26) repeat scroll 0 0 rgba(0, 0, 0, 0);
     border: 0 none;
     border-radius: 0;

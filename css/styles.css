@@ -43,28 +43,7 @@ body {
 
 button, input[type=submit] {
   margin-right: 1em;
-  font-size: 12px;
-  padding: 0.5em 1.5em;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF83BE26', endColorstr='#FF486915');
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #83be26), color-stop(100%, #83be26));
-  background: -webkit-linear-gradient(#83be26, #83be26);
-  background: -moz-linear-gradient(#83be26, #83be26);
-  background: -o-linear-gradient(#83be26, #83be26);
-  background: linear-gradient(#83be26, #83be26);
-  -webkit-box-shadow: #a8dd54 0 1px 0 inset;
-  -moz-box-shadow: #a8dd54 0 1px 0 inset;
-  box-shadow: #a8dd54 0 1px 0 inset;
-  border: 1px solid #74a922;
-  color: white;
-  background: linear-gradient(#83be26, #83be26) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: linear-gradient(#83be26, #83be26) repeat scroll 0 0 transparent;
   border: 0 none;
   border-radius: 0;
   box-shadow: 0 1px 0 #A8DD54 inset;
@@ -74,35 +53,6 @@ button, input[type=submit] {
   font-size: 1em;
   font-weight: bold;
   padding: 0.5em 1.5em;
-}
-button:hover, input[type=submit]:hover {
-  text-decoration: none;
-}
-button:hover, input[type=submit]:hover {
-  background-color: #74a922;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #74a922), color-stop(100%, #74a922));
-  background: -webkit-linear-gradient(#74a922, #74a922);
-  background: -moz-linear-gradient(#74a922, #74a922);
-  background: -o-linear-gradient(#74a922, #74a922);
-  background: linear-gradient(#74a922, #74a922);
-}
-button:active, input[type=submit]:active {
-  -webkit-box-shadow: #6c9c1f 0 1px 2px inset;
-  -moz-box-shadow: #6c9c1f 0 1px 2px inset;
-  box-shadow: #6c9c1f 0 1px 2px inset;
-}
-button.disabled, button[disabled], input[type=submit].disabled, input[type=submit][disabled] {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-  background: #83be26;
-  cursor: default;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-button::-moz-focus-inner, input[type=submit]::-moz-focus-inner {
-  padding: 0 !important;
-  margin: -1px !important;
 }
 
 strong, b {
@@ -164,15 +114,6 @@ h2 + p, h4 + p, h2 + h4 {
  * components should not be placed here and should instead be kept with the
  * relevant SCSS for that component.
  ******************************************************************************/
-* html {
-  font-size: 100%;
-}
-
-html {
-  font-size: 16px;
-  line-height: 1.5625em;
-}
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -320,7 +261,17 @@ a img {
 }
 @media (min-width: 74em) {
   .l-page {
+    *zoom: 1;
     max-width: 74em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .l-page:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 }
 
@@ -760,6 +711,7 @@ body#widget, #block-views-petitions-block-1 {
 }
 body#widget .node--petition-widg, #block-views-petitions-block-1 .node--petition-widg {
   width: 100%;
+  position: relative;
 }
 body#widget .ui-widget, #block-views-petitions-block-1 .ui-widget {
   font-size: 12px;
@@ -793,8 +745,11 @@ body#widget ol li a, #block-views-petitions-block-1 ol li a {
   text-decoration: none;
   vertical-align: middle;
 }
+body#widget .field--name-title-field, #block-views-petitions-block-1 .field--name-title-field {
+  display: none;
+}
 body#widget .webform-client-form-15, #block-views-petitions-block-1 .webform-client-form-15 {
-  margin: 1em 0 -2.2em;
+  margin: 1em 0;
   padding-bottom: 1em;
   width: 45%;
   position: relative;
@@ -1017,28 +972,7 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
 }
 
 .simplenews-subscribe input[type=submit] {
-  font-size: 12px;
-  padding: 0.5em 1.5em;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF83BE26', endColorstr='#FF486915');
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #83be26), color-stop(100%, #83be26));
-  background: -webkit-linear-gradient(#83be26, #83be26);
-  background: -moz-linear-gradient(#83be26, #83be26);
-  background: -o-linear-gradient(#83be26, #83be26);
-  background: linear-gradient(#83be26, #83be26);
-  -webkit-box-shadow: #a8dd54 0 1px 0 inset;
-  -moz-box-shadow: #a8dd54 0 1px 0 inset;
-  box-shadow: #a8dd54 0 1px 0 inset;
-  border: 1px solid #74a922;
-  color: white;
-  background: linear-gradient(#83be26, #83be26) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: linear-gradient(#83be26, #83be26) repeat scroll 0 0 transparent;
   border: 0 none;
   border-radius: 0;
   box-shadow: 0 1px 0 #A8DD54 inset;
@@ -1053,35 +987,6 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   border: 0;
   float: left;
   margin: 1.7em 0 0 1em;
-}
-.simplenews-subscribe input[type=submit]:hover {
-  text-decoration: none;
-}
-.simplenews-subscribe input[type=submit]:hover {
-  background-color: #74a922;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #74a922), color-stop(100%, #74a922));
-  background: -webkit-linear-gradient(#74a922, #74a922);
-  background: -moz-linear-gradient(#74a922, #74a922);
-  background: -o-linear-gradient(#74a922, #74a922);
-  background: linear-gradient(#74a922, #74a922);
-}
-.simplenews-subscribe input[type=submit]:active {
-  -webkit-box-shadow: #6c9c1f 0 1px 2px inset;
-  -moz-box-shadow: #6c9c1f 0 1px 2px inset;
-  box-shadow: #6c9c1f 0 1px 2px inset;
-}
-.simplenews-subscribe input[type=submit].disabled, .simplenews-subscribe input[type=submit][disabled] {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-  background: #83be26;
-  cursor: default;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-.simplenews-subscribe input[type=submit]::-moz-focus-inner {
-  padding: 0 !important;
-  margin: -1px !important;
 }
 
 .issues-link {
@@ -1385,28 +1290,7 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   }
 }
 .webform-client-form-15 .form-actions input {
-  font-size: 12px;
-  padding: 0.5em 1.5em;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF83BE26', endColorstr='#FF486915');
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #83be26), color-stop(100%, #83be26));
-  background: -webkit-linear-gradient(#83be26, #83be26);
-  background: -moz-linear-gradient(#83be26, #83be26);
-  background: -o-linear-gradient(#83be26, #83be26);
-  background: linear-gradient(#83be26, #83be26);
-  -webkit-box-shadow: #a8dd54 0 1px 0 inset;
-  -moz-box-shadow: #a8dd54 0 1px 0 inset;
-  box-shadow: #a8dd54 0 1px 0 inset;
-  border: 1px solid #74a922;
-  color: white;
-  background: linear-gradient(#83be26, #83be26) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  background: linear-gradient(#83be26, #83be26) repeat scroll 0 0 transparent;
   border: 0 none;
   border-radius: 0;
   box-shadow: 0 1px 0 #A8DD54 inset;
@@ -1419,35 +1303,6 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   font-size: 1em;
   font-weight: bold;
   border: 0;
-}
-.webform-client-form-15 .form-actions input:hover {
-  text-decoration: none;
-}
-.webform-client-form-15 .form-actions input:hover {
-  background-color: #74a922;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #74a922), color-stop(100%, #74a922));
-  background: -webkit-linear-gradient(#74a922, #74a922);
-  background: -moz-linear-gradient(#74a922, #74a922);
-  background: -o-linear-gradient(#74a922, #74a922);
-  background: linear-gradient(#74a922, #74a922);
-}
-.webform-client-form-15 .form-actions input:active {
-  -webkit-box-shadow: #6c9c1f 0 1px 2px inset;
-  -moz-box-shadow: #6c9c1f 0 1px 2px inset;
-  box-shadow: #6c9c1f 0 1px 2px inset;
-}
-.webform-client-form-15 .form-actions input.disabled, .webform-client-form-15 .form-actions input[disabled] {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-  background: #83be26;
-  cursor: default;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-.webform-client-form-15 .form-actions input::-moz-focus-inner {
-  padding: 0 !important;
-  margin: -1px !important;
 }
 
 .webform-component-markup {
@@ -1471,12 +1326,12 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   line-height: 1.416;
 }
 
-.node--progress-bar-block {
+.block--views-ds-progress-block-block {
   background: white;
   padding: 1em;
   margin-bottom: 1em;
 }
-.node--progress-bar-block h2 {
+.block--views-ds-progress-block-block h2 {
   display: none;
 }
 
@@ -1589,6 +1444,12 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   position: static;
   float: left;
   width: 60%;
+}
+
+.view-petitions .attachment .description {
+  font-size: 1em;
+  margin-top: 5px;
+  font-style: italic;
 }
 
 .page-demands .views-row h2 {
@@ -1842,6 +1703,18 @@ div.views-fluid-grid h3 {
   display: none;
 }
 
+.node--webform--progress-bar-block .addtoany {
+  display: none;
+}
+
+.service-links-twitter-widget {
+  margin-top: 2px;
+}
+
+.service-links-google-plus-one.last {
+  margin-top: 4px;
+}
+
 .flexslider {
   margin: 0 0 1em 0;
   border: 0;
@@ -1888,7 +1761,7 @@ div.views-fluid-grid h3 {
 .flexslider .views-field-title {
   position: absolute;
   bottom: 0;
-  padding: 0 1em;
+  padding: 0 50px;
   background: #fff;
   opacity: .8;
   width: 100%;
@@ -1897,9 +1770,78 @@ div.views-fluid-grid h3 {
   text-decoration: none;
   font-weight: normal;
 }
+.flexslider .flex-direction-nav a {
+  display: block !important;
+}
 
 .flex-direction-nav a:before {
   line-height: 1;
+}
+
+/* Direction Nav */
+.flex-direction-nav {
+  *height: 0;
+}
+
+.flex-direction-nav a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  position: absolute;
+  bottom: 3%;
+  top: auto;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 1;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.flex-direction-nav .flex-prev {
+  left: 10px;
+  opacity: 0.7;
+}
+
+.flex-direction-nav .flex-next {
+  right: 10px;
+  opacity: 0.7;
+  text-align: right;
+}
+
+.flexslider:hover .flex-prev {
+  opacity: 1;
+  left: 10px;
+}
+
+.flexslider:hover .flex-next {
+  opacity: 1;
+  right: 10px;
+}
+
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+  opacity: 1;
+}
+
+.flex-direction-nav .flex-disabled {
+  opacity: 0 !important;
+  filter: alpha(opacity=0);
+  cursor: default;
+}
+
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f001';
+}
+
+.flex-direction-nav a.flex-next:before {
+  content: '\f002';
 }
 
 /*.front {

@@ -7,14 +7,14 @@
  * relevant SCSS for that component.
  ******************************************************************************/
 
-@import "susy";
+@import "susyone";
 
 // Settings
 
 $total-columns  : 10;
 $column-width   : 4em;
 $gutter-width   : 1em;
-$grid-padding   : $gutter-width;
+//$grid-padding   : $gutter-width;
 
 $tablet-portrait: 5;
 $tablet: 10;
@@ -25,7 +25,7 @@ $break : 15;
 $base-font-size: 16px;
 $base-line-height: 25px;
 
-@include establish-baseline;
+//@include establish-baseline;
 
 * {
     -webkit-box-sizing: border-box;
@@ -291,7 +291,7 @@ a img {
 // Layout
 @include at-breakpoint($tablet_portrait) {
   .l-page {
-  padding:0 $grid-padding*2;
+  padding:0 2em;
 }
   .headwrap {
     background: url(../images/welle_1920px.png) center bottom repeat-x #fff;
@@ -423,7 +423,7 @@ a img {
       margin: 0 0 0 -5% !important;
     }
   }
-  $grid-padding   : 0;
+  //$grid-padding   : 0;
   .l-main {
     margin-top:-1.5em;
     $main-columns: 15;

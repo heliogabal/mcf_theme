@@ -91,7 +91,7 @@
     width: 46%;
     }
     input {
-    @include sassy-button("simple", 0, 12px, #83BE26, #83BE26, #fff, "false");
+    //@include sassy-button("simple", 0, 12px, #83BE26, #83BE26, #fff, "false");
     background: linear-gradient(#83BE26, #83BE26) repeat scroll 0 0 rgba(0, 0, 0, 0);
     border: 0 none;
     border-radius: 0;
@@ -126,7 +126,7 @@
     line-height: 1.416;
 }
 
-.node--progress-bar-block {
+.block--views-ds-progress-block-block {
     background: $white;
     padding: $gutter-width;
     margin-bottom: $gutter-width;
@@ -224,4 +224,10 @@
         float: left;
         width: 60%;
     }
+}
+
+.view-petitions .attachment .description {
+    font-size: 1em;
+    margin-top: 5px;
+    font-style: italic;
 }
