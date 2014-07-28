@@ -46,3 +46,15 @@
 .service-links-google-plus-one.last {
     margin-top: 4px;
 }
+
+.service-links {
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      float: left;
+      margin-right: 1em;
+    }
+  }
+}

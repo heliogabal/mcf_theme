@@ -133,6 +133,10 @@
     h2 {
         display: none;
     }
+    .petlink {
+        font-weight: normal;
+        text-decoration: none;
+    }
 }
 .pgbar-wrapper {
     margin-bottom: $gutter-width;

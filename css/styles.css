@@ -1334,6 +1334,10 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
 .block--views-ds-progress-block-block h2 {
   display: none;
 }
+.block--views-ds-progress-block-block .petlink {
+  font-weight: normal;
+  text-decoration: none;
+}
 
 .pgbar-wrapper {
   margin-bottom: 1em;
@@ -1715,6 +1719,16 @@ div.views-fluid-grid h3 {
   margin-top: 4px;
 }
 
+.service-links ul {
+  padding: 0;
+  margin: 0;
+}
+.service-links ul li {
+  list-style: none;
+  float: left;
+  margin-right: 1em;
+}
+
 .flexslider {
   margin: 0 0 1em 0;
   border: 0;
@@ -1722,11 +1736,13 @@ div.views-fluid-grid h3 {
 }
 .flexslider .views-field-title {
   position: absolute;
+  left: 0;
+  right: 0;
   bottom: 0;
-  padding: 0 1em 0;
+  max-width: 100%;
+  padding: 0 50px 0;
   background: #fff;
   opacity: .8;
-  width: 100%;
 }
 .flexslider .views-field-title a {
   text-decoration: none;
@@ -1753,24 +1769,7 @@ div.views-fluid-grid h3 {
   box-shadow: none;
 }
 
-.flexslider {
-  margin: 0;
-  border: 0;
-  border-radius: 0;
-}
-.flexslider .views-field-title {
-  position: absolute;
-  bottom: 0;
-  padding: 0 50px;
-  background: #fff;
-  opacity: .8;
-  width: 100%;
-}
-.flexslider .views-field-title a {
-  text-decoration: none;
-  font-weight: normal;
-}
-.flexslider .flex-direction-nav a {
+.flex-direction-nav a {
   display: block !important;
 }
 
@@ -1843,15 +1842,3 @@ div.views-fluid-grid h3 {
 .flex-direction-nav a.flex-next:before {
   content: '\f002';
 }
-
-/*.front {
-  .l-main {
-    margin-top: 0 !important;
-  }
-  .l-content {
-    margin-top: 0 !important;
-  }
-  .l-region--sidebar-second {
-    margin-top: 0 !important;
-  }
-}*/
