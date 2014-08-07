@@ -1,4 +1,4 @@
-/*@import "sassy-buttons";*/
+// @import "sassy-buttons";
 
 //   Sassy Button defaults
 //   These are the base defaults for the buttons, if you are going to use similar buttons on an entire site,
@@ -18,13 +18,44 @@ $sb-ie-support: true;
 //  Mixin that gets included when calling the sassy-button-structure if you need any
 //  styles applied to all your sassy buttons, add it here.
 
-@mixin sassy-button-default-structure {
-  display: inline-block;
-  cursor: pointer;
-}
+//@mixin sassy-button-default-structure {
+//  display: inline-block;
+//  cursor: pointer;
+//}
 
 //  *    Mixin reference
 //  *   -----------------------------------------
 //  *   @include sassy-button(gradient-style, border-radius, font-size, first-color, second-color, text-color, text-style, auto-states, ie-support);
 //  *   @include sassy-button-structure(-border-radius, font-size, padding);
 //  *   @include sassy-button-gradient(gradient-style, first-color, second-color, text-color, text-style, auto-states, ie-support);
+
+.webform-client-form-15 .form-actions input {
+    background: linear-gradient(#83be26, #83be26) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    border-radius: 0;
+    box-shadow: 0 1px 0 #a8dd54 inset;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.5em 1.5em;
+}
+
+button, input[type="submit"] {
+    background: linear-gradient(#83be26, #83be26) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    border-radius: 0;
+    box-shadow: 0 1px 0 #a8dd54 inset;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    margin-right: 1em;
+    padding: 0.5em 1.5em;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: linear-gradient(#74a922, #74a922) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}

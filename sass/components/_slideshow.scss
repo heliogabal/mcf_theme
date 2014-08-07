@@ -1,0 +1,28 @@
+// Slideshow
+.flexslider {
+  margin: 0 0 1em 0;
+  border: 0;
+  border-radius: 0;
+  .views-field-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    padding: 0 50px 0;
+    background: #fff;
+    opacity: .8;
+    a {
+      text-decoration: none;
+      font-weight: normal;
+    }
+  }
+}
+.front {
+  .l-content {
+    margin-top: 0;
+  }
+  .l-region--sidebar-second {
+    margin-top: 0;
+  }
+}

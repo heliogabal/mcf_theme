@@ -7,14 +7,14 @@
  * relevant SCSS for that component.
  ******************************************************************************/
 
-@import "susy";
+@import "susyone";
 
 // Settings
 
 $total-columns  : 10;
 $column-width   : 4em;
 $gutter-width   : 1em;
-$grid-padding   : $gutter-width;
+//$grid-padding   : $gutter-width;
 
 $tablet-portrait: 5;
 $tablet: 10;
@@ -25,7 +25,7 @@ $break : 15;
 $base-font-size: 16px;
 $base-line-height: 25px;
 
-/*@include establish-baseline;*/
+//@include establish-baseline;
 
 * {
     -webkit-box-sizing: border-box;
@@ -73,28 +73,28 @@ div.quickbar-links, div#quickbar, div#quickbar * {
 body {
     margin:0;
     padding:0;
-    background:$main_background;
+    background: $main_background;
 }
 
 .site-slogan {
     background: $green;
-    width:100%;
-    text-align: center;
-    padding-bottom:1em;
+    width: 100%;
+    text-align: left;
+    padding: 1em 2em;
     margin:0;
     clear:none;
     @include at-breakpoint(10) {
       text-align: left;
     }
     @include at-breakpoint(12) {
-      margin-top:182px;
+      /*margin-top:182px;*/
       width: auto;
       background: transparent;
     }
 }
 .l-content {
-    margin-top:4em;
-    float:left;
+    margin-top: 4em;
+    /*float: left;*/
 }
 
 h1 {
@@ -151,96 +151,93 @@ a img {
   @include set-container-width(10);
   padding: 0;
 }
-/* .l-main {
-  @include boxit(vertical);
-}
-.l-content {
-  @include order(1);
-  margin-bottom:$gutter-width*2;
-}
-.l-region--sidebar-first {
-  @include order(3);
-  @include boxit(vertical);
-  .block--views-ds-progress-block--block {
-    @include order(1);
-  }
-  nav {
-    @include order(2);
-  }
-  .block--block--5 {
-    @include order(5);
-  }
-  .block--block--4 {
-    @include order(4);
-  }
-  .block--block--7 {
-    @include order(3);
-  }
-}
-.l-region--sidebar-second {
-  @include order(2);
-}
-.l-footer {
-  @include boxit(vertical);
-  .l-region--footer-right {
-    padding: 0 1em;
-    @include order(1);
-  }
-  .l-region--footer-left {
-    padding: 0 1em;
-    @include order(2);
-  }
-}*/
-
 .headwrap {
-  height: 189px;
-  background: url(../images/welle.png) repeat-x #fff;
+  height: 199px;
+  background: url(../images/welle.png) center bottom repeat-x #fff;
 }
 .l-header {
   $main-columns: 10;
   // Domain Switcher
   .block--domain-nav-default, .block--lang-dropdown,
   .block--locale-language-content {
-    padding: 1em 0 0 1em;
-    @include at-breakpoint($tablet) {
+    padding: .5em 0 0 1em;
+    /*@include at-breakpoint($tablet) {
       @include span-columns(3, $main-columns);
       margin:$gutter-width 0 0 $gutter-width;
       padding: 0;
     }
     @include at-breakpoint($break) {
       @include span-columns(3, 15);
-    }
+    }*/
     ul {
         list-style: none;
         padding:0;
     }
   }
-
-// Search Form
-  .block--search-form {
-    @include span-columns(2 omega, $main-columns);
-    margin:.65em 0 0 -5%;
-    input {
-      height:20px;
-      font-size:12px;
-    }
-    .search-block-form input.form-submit {
-      background: url(../images/menu.png) -2px -76px no-repeat;
-      text-indent: -999em;
-      border:0;
-      box-shadow:none;
-    }
-  }
-
 // Logo und Bild
   .l-branding {
     @include span-columns(10 omega, $main-columns);
+    background: #fff;
     img {
       margin:0;
-      float:left;
+      /*float:left;*/
     }
   }
+  // Domain Switcher
+  .l-region--header /* , .block--domain-nav-default, .block--lang-dropdown*/ {
+    @include span-columns(10 omega, $main-columns);
+  }
+  .l-region--navigation {
+    background: #fff;
+    padding: 0 2em;
+    margin-bottom: 1em;
+    @include span-columns(10 omega, $main-columns);
+  }
+  @include at-breakpoint(10) {
+    .l-region--navigation {
+        $main-columns: 10;
+        @include span-columns(8 omega, $main-columns);
+        @include push(2);
+      }
+  }
+  @include at-breakpoint(14) {
+    .l-region--navigation {
+    background: transparent;
+    padding: 0;
+    $main-columns: 10;
+    @include span-columns(5 omega, $main-columns);
+    @include push(0);
+  }
+  }
 }
+.l-main {
+    $main-columns: 10;
+    @include span-columns($main-columns omega, $tablet);
+    .l-region--slideshow {
+      @include span-columns(10 omega,$main-columns);
+      margin-left: 0;
+      margin-top: 1.5em;
+    }
+    .l-content {
+      font-size: 14px;
+      line-height: 1.714;
+      padding-top: 2em;
+      @include span-columns(10 omega,$main-columns);
+    }
+    .l-region--sidebar-first {
+      font-size: .75em;
+      line-height: 1.416;
+      @include span-columns(10 omega, $main-columns);
+      margin-left: 0;
+      margin-top: 5px;
+    }
+    .l-region--sidebar-second {
+      font-size: .75em;
+      line-height:1.416;
+      @include span-columns(10 omega, $main-columns);
+      margin-top: 2.3em;
+    }
+  }
 .l-region--bottom-left {
   $main-columns: 10;
   @include span-columns(10 omega, $main-columns);
@@ -294,7 +291,7 @@ a img {
 // Layout
 @include at-breakpoint($tablet_portrait) {
   .l-page {
-  padding:0 $grid-padding*2;
+  padding:0 2em;
 }
   .headwrap {
     background: url(../images/welle_1920px.png) center bottom repeat-x #fff;
@@ -321,26 +318,41 @@ a img {
   .l-header {
   $main-columns: 10;
   // Domain Switcher
-  .block--domain-nav-default, .block--lang-dropdown {
-    @include span-columns(1, $main-columns);
-  }
-
-// Search Form
-  .block--search-form {
+  .l-region--header /* , .block--domain-nav-default, .block--lang-dropdown*/ {
     @include span-columns(2, $main-columns);
   }
 
+// Search Form
+ /* .block--search-form {
+    @include span-columns(2, $main-columns);
+  }*/
+
 // Logo und Bild
   .l-branding {
-    @include span-columns(7 omega, $main-columns);
+    @include span-columns(3, $main-columns);
+    background: transparent;
     img {
       margin: 0 0 0 -10%;
     }
+    .site-slogan {
+      padding: 0 0 1em .5em;
+      white-space: nowrap;
+    }
   }
+  /*.l-region--navigation {
+    background: transparent;
+    padding: 0;
+    @include span-columns(5 omega, $main-columns);
+  }*/
 }
   .l-main {
     $main-columns: 10;
     @include span-columns($main-columns omega, $tablet);
+    .l-region--slideshow {
+      @include span-columns(8 omega,$main-columns);
+      margin-left: 0;
+      margin-top: 1.5em;
+    }
     .l-content {
       font-size:14px;
       line-height:1.714;
@@ -352,8 +364,10 @@ a img {
       font-size:.75em;
       line-height:1.416;
       @include span-columns(2, $main-columns);
-      @include pull(8, $main-columns);
-      margin-top:5px;
+      /*@include pull(8, $main-columns);*/
+      @include isolate(0);
+      margin-left: 0;
+      margin-top: 5px;
     }
     .l-region--sidebar-second {
       font-size:.75em;
@@ -389,6 +403,17 @@ a img {
 }
 
 @include at-breakpoint($break) {
+.front {
+  .l-main {
+    margin-top: 0 !important;
+  }
+  .l-content {
+    margin-top: 0 !important;
+  }
+  .l-region--sidebar-second {
+    margin-top: 0 !important;
+  }
+}
   .l-header, .l-main, .l-footer {
     @include set-container-width(15);
   }
@@ -398,24 +423,24 @@ a img {
       margin: 0 0 0 -5% !important;
     }
   }
-  $grid-padding   : 0;
+  //$grid-padding   : 0;
   .l-main {
     margin-top:-1.5em;
     $main-columns: 15;
     @include span-columns(15 omega, $break);
+    .l-region--slideshow {
+      @include span-columns(12 omega,$main-columns);
+      /*@include push(3, $main-columns);*/
+      margin-left: 0;
+      margin-top: 1.5em;
+    }
     .l-region--sidebar-first {
       @include span-columns(3, $main-columns);
-      @include pull(12, $main-columns);
-      margin-top:5px;
+      @include isolate(0);
+      margin-left: 0;
+      margin-top: 5px;
     }
-    .l-slideshow {
-      @include span-columns(12 omega,$main-columns);
-      @include pull(12, $main-columns);
-      @include push(3, $main-columns);
-      margin-top: 3em;
-    }
-    .l-content {
-      @include span-columns(9,$main-columns);
+    .l-content { @include span-columns(9,$main-columns);
       @include push(3, $main-columns);
       background:$text_background;
       margin-top: 4.2em;
@@ -423,7 +448,7 @@ a img {
      }
     .l-region--sidebar-second {
       @include span-columns(3 omega, $main-columns);
-      margin-top:4.9em;
+      margin-top: 4.9em;
     }
   }
 }

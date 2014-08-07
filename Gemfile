@@ -27,7 +27,7 @@ group :development do
   # Optionally remove the lines not specific to your OS.
   # https://github.com/guard/guard#efficient-filesystem-handling
   gem 'rb-inotify', '~> 0.9', :require => false      # Linux
-  #gem 'rb-fsevent', :require => false                # Mac OSX
-  #gem 'rb-fchange', :require => false                # Windows
+  gem 'rb-fsevent', :require => false                # Mac OSX
+  gem 'rb-fchange', :require => false                # Windows
 
 end

@@ -36,3 +36,31 @@
 .i18n-en .block--views-site-follow-block .views-row-1 {
     display:none;
 }
+
+/* neue Follow Links */
+
+#block-views-follow-user-block a.follow-link {
+  float:left;
+}
+
+.node--webform--progress-bar-block .addtoany {
+  display: none;
+}
+.service-links-twitter-widget {
+    margin-top: 2px;
+}
+.service-links-google-plus-one.last {
+    margin-top: 4px;
+}
+
+.service-links {
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      float: left;
+      margin-right: 1em;
+    }
+  }
+}

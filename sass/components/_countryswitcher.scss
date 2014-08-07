@@ -25,12 +25,12 @@
 /* Language Switcher */
 .language-switcher-locale-url {
     list-style: none;
-    @include at-breakpoint(10) {
+    /*@include at-breakpoint(10) {
         @include span-columns(6, 10);
     }
     @include at-breakpoint(15) {
         @include span-columns(10, 15);
-    }
+    }*/
     li {
         float: left;
         width: 35px;

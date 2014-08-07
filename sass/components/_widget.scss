@@ -2,8 +2,9 @@
 
 body#widget, #block-views-petitions-block-1 {
     .node--petition-widg {
-	width: 100%;
-}
+        width: 100%;
+        position: relative;
+    }
     .ui-widget {
       font-size: 12px;
     }
@@ -43,8 +44,11 @@ body#widget, #block-views-petitions-block-1 {
             vertical-align: middle;
         }
     }
+    .field--name-title-field {
+        display: none;
+    }
     .webform-client-form-15 {
-        margin: 1em 0 -2.2em;
+        margin: 1em 0;
         padding-bottom: 1em;
         width: 45%;
         position: relative;

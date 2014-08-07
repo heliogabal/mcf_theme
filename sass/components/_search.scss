@@ -1,0 +1,13 @@
+// Search Form
+  .block--search-form {
+    margin: .65em 0 0 0;
+    input {
+      height: 25px;
+    }
+    .search-block-form input.form-submit {
+      background: url(../images/menu.png) -2px -78px no-repeat;
+      text-indent: -999em;
+      border: 0;
+      box-shadow: none;
+    }
+  }
