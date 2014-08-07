@@ -1707,6 +1707,11 @@ div.views-fluid-grid h3 {
   display: none;
 }
 
+/* neue Follow Links */
+#block-views-follow-user-block a.follow-link {
+  float: left;
+}
+
 .node--webform--progress-bar-block .addtoany {
   display: none;
 }
