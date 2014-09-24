@@ -27,3 +27,16 @@
     display: inline-block;
   }
 }
+// Footer bottom
+
+.footer-bottom {
+  ul {
+    float:left;
+    margin-top: 2em;
+  }
+  li {
+    float: left;
+    list-style: none outside none;
+    margin: 0 1em 1em 0;
+  }
+}

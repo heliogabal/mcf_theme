@@ -16,6 +16,7 @@ regions[bottom_left]    = Bottom Left
 regions[bottom_right]   = Bottom Right
 regions[footer_left]    = Footer Left
 regions[footer_right]   = Footer Right
+regions[footer_bottom]  = Footer Bottom
 ; Stylesheets
 ;stylesheets[all][] = css/layouts/3col/3col.layout.css
 ; JS

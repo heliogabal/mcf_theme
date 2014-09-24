@@ -21,6 +21,7 @@ require 'compass-normalize'
 require 'rgbapng'
 require 'toolkit'
 require 'susy'
+require 'singularitygs'
 #require 'sassy-buttons'
 #require 'modular-scale'
 
