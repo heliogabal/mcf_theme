@@ -43,7 +43,7 @@ body {
 
 button, input[type=submit] {
   margin-right: 1em;
-  background: linear-gradient(#83be26, #83be26) repeat scroll 0 0 transparent;
+  background: linear-gradient(#83be26, #83be26) repeat scroll 0 0 rgba(0, 0, 0, 0);
   border: 0 none;
   border-radius: 0;
   box-shadow: 0 1px 0 #A8DD54 inset;
@@ -261,17 +261,7 @@ a img {
 }
 @media (min-width: 74em) {
   .l-page {
-    *zoom: 1;
     max-width: 74em;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .l-page:after {
-    content: "";
-    display: table;
-    clear: both;
   }
 }
 
@@ -972,7 +962,7 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
 }
 
 .simplenews-subscribe input[type=submit] {
-  background: linear-gradient(#83be26, #83be26) repeat scroll 0 0 transparent;
+  background: linear-gradient(#83be26, #83be26) repeat scroll 0 0 rgba(0, 0, 0, 0);
   border: 0 none;
   border-radius: 0;
   box-shadow: 0 1px 0 #A8DD54 inset;
@@ -1187,6 +1177,16 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   display: inline-block;
 }
 
+.footer-bottom ul {
+  float: left;
+  margin-top: 2em;
+}
+.footer-bottom li {
+  float: left;
+  list-style: none outside none;
+  margin: 0 1em 1em 0;
+}
+
 .form-item {
   margin: 0;
 }
@@ -1290,7 +1290,7 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   }
 }
 .webform-client-form-15 .form-actions input {
-  background: linear-gradient(#83be26, #83be26) repeat scroll 0 0 transparent;
+  background: linear-gradient(#83be26, #83be26) repeat scroll 0 0 rgba(0, 0, 0, 0);
   border: 0 none;
   border-radius: 0;
   box-shadow: 0 1px 0 #A8DD54 inset;
