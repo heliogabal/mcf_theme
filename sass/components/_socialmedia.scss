@@ -1,29 +1,33 @@
 #block-views-site-follow-block {
     .follow-link-wrapper a {
-    float:right;
+    float: right;
     display: block;
-    background:url(../images/social.gif) no-repeat;
-    overflow:hidden;
-    height:50px;
-    width:52px;
-    padding:0;
+    /*background:url(../images/social.gif) no-repeat;
+    overflow: hidden;
+    height: 50px;
+    width: 52px;
+    padding: 0;*/
+    padding-left: 32px;
   }
   .follow-link-wrapper-facebook a{
-    background-position: 5px 0;
+    /*background-position: 5px 0;*/
+    background: url("/sites/all/modules/contrib/follow/icons/paulrobertlloyd32/icon-youtube.png");
   }
-  .follow-link-wrapper-facebook a:hover{
+  /*.follow-link-wrapper-facebook a:hover{
     background-position: 5px -50px;
-  }
+  }*/
   .follow-link-wrapper-twitter a{
-    background-position: -35px 0;
+    /*background-position: -35px 0;*/
+    background-image: url("/sites/all/modules/contrib/follow/icons/paulrobertlloyd32/icon-twitter.png");
   }
-  .follow-link-wrapper-twitter a:hover{
+  /*.follow-link-wrapper-twitter a:hover{
     background-position: -35px -50px;
-  }
+  }*/
   .follow-link-wrapper-youtube a{
-    background-position: -90px 0;
+    /*background-position: -90px 0;*/
+    background-image: url("/sites/all/modules/contrib/follow/icons/paulrobertlloyd32/icon-youtube.png");
   }
-  .follow-link-wrapper-youtube a:hover{
+  /*.follow-link-wrapper-youtube a:hover{
     background-position: -90px -50px;
   }
   .follow-link-wrapper-this-site a{
@@ -31,7 +35,7 @@
   }
   .follow-link-wrapper-this-site a:hover{
     background-position: -150px -50px;
-  }
+  }*/
 }
 .i18n-en .block--views-site-follow-block .views-row-1 {
     display:none;
@@ -40,7 +44,7 @@
 /* neue Follow Links */
 
 #block-views-follow-user-block a.follow-link {
-  float:left;
+  float: left;
 }
 
 .node--webform--progress-bar-block .addtoany {

@@ -462,9 +462,9 @@ a img {
     padding: 0 2em;
   }
 
-  /*.headwrap {
+  .headwrap {
     background: url(../images/welle_1920px.png) center bottom repeat-x #fff;
-  }*/
+  }
   .l-footer .l-region--footer-left {
     padding-right: 0;
   }
@@ -1671,13 +1671,30 @@ div.views-fluid-grid h3 {
 #block-views-site-follow-block .follow-link-wrapper a {
   float: right;
   display: block;
-  background: url(../images/social.gif) no-repeat;
-  overflow: hidden;
+  /*background: url(../images/social.gif) no-repeat;*/
+  /*overflow: hidden;
   height: 50px;
-  width: 52px;
-  padding: 0;
+  width: 52px;*/
+  padding: 0 0 0 32px;
 }
-#block-views-site-follow-block .follow-link-wrapper-facebook a {
+a.follow-link {
+  padding: 0 0 0 32px;
+}
+.follow-link-wrapper {
+    float: right;
+    padding-left: 5px;
+}
+.follow-link-wrapper-facebook a{
+    background: url("/sites/all/modules/contrib/follow/icons/paulrobertlloyd32/icon-facebook.png") no-repeat;
+  }
+.follow-link-wrapper-twitter a{
+    background-image: url("/sites/all/modules/contrib/follow/icons/paulrobertlloyd32/icon-twitter.png") no-repeat;
+  }
+.follow-link-wrapper-youtube a{
+    background-image: url("/sites/all/modules/contrib/follow/icons/paulrobertlloyd32/icon-youtube.png") no-repeat;
+  }
+
+/*#block-views-site-follow-block .follow-link-wrapper-facebook a {
   background-position: 5px 0;
 }
 #block-views-site-follow-block .follow-link-wrapper-facebook a:hover {
@@ -1704,7 +1721,7 @@ div.views-fluid-grid h3 {
 
 .i18n-en .block--views-site-follow-block .views-row-1 {
   display: none;
-}
+}*/
 
 /* neue Follow Links */
 #block-views-follow-user-block a.follow-link {
