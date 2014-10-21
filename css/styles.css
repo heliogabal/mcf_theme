@@ -1478,7 +1478,7 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   margin: 1em 0 0;
   padding: 1em;
   background: #fff;
-  font-size: .8em;
+  font-size: .75em;
   float: left;
 }
 .petob .ds-2col-fluid > .group-left {
@@ -1509,6 +1509,10 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   margin: 1em 0 0 1em;
   padding-bottom: 0;
   width: 100%;
+}
+.petob .webform-client-form label {
+  top: 5px;
+  font-size: 1em;
 }
 .petob #webform-component-name {
   width: 100%;
