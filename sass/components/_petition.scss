@@ -235,3 +235,105 @@
     margin-top: 5px;
     font-style: italic;
 }
+
+/* Petition Block oben */
+.petob {
+    margin: 1em 0 0;
+    padding: 1em;
+    background: #fff;
+    font-size: .8em;
+    float: left;
+    .ds-2col-fluid > .group-left {
+        width: 100%;
+        @include at-breakpoint (7) {
+        width: 40%;
+    }
+    }
+    .ds-2col-fluid > .group-right {
+        width: 100%;
+        @include at-breakpoint (7) {
+        width: 60%;
+    }
+        position: relative;
+    }
+    .webform-component {
+        width: auto;
+        float: left;
+    }
+    .webform-component-select select {
+        width: 160px;
+    }
+    .webform-client-form {
+        margin: 1em 0 0 1em;
+        padding-bottom: 0;
+        width: 100%;
+    }
+    #webform-component-name {
+        width: 100%;
+        @include at-breakpoint ($tablet) {
+        width: 46%;
+    }
+    }
+    #webform-component-country {
+        width: 100%;
+        @include at-breakpoint ($tablet) {
+        width: 46%;
+    }
+    }
+    .webform-component-email {
+        width: 100%;
+        @include at-breakpoint ($tablet) {
+        width: 46%;
+    }
+    }
+    #webform-component-city {
+        width: 100%;
+        @include at-breakpoint ($tablet) {
+        width: 46%;
+    }
+    }
+    #webform-component-i-want-more-info-by-email {
+        position: static;
+        width: 100%;
+        @include at-breakpoint ($tablet) {
+        width: 55%;
+    }
+    }
+    #webform-component-mandatory-note {
+        right: 0;
+        text-align: right;
+        max-width: 130px;
+    }
+    .select-or-other-other {
+        width: 100%;
+        margin-top: .3em;
+    }
+    .webform-client-form-15 .form-actions {
+        position: static;
+       }
+    .form-submit {
+        width: 93%;
+        max-width: 250px;
+        margin: 0 0 2em 0;
+    }
+}
+    @include at-breakpoint ($tablet-portrait) {
+        .petob {
+        margin: 1em 2em 0;
+        }
+    }
+    @include at-breakpoint ($tablet) {
+    .petob {
+        margin: 1em 1em 0;
+    }
+}
+    @include at-breakpoint ($break) {
+    .petob {
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        .form-submit {
+            width: 49%;
+        }
+    }
+}

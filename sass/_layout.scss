@@ -293,9 +293,9 @@ a img {
   .l-page {
   padding:0 2em;
 }
-  .headwrap {
+  /*.headwrap {
     background: url(../images/welle_1920px.png) center bottom repeat-x #fff;
-  }
+  }*/
   .l-footer {
     .l-region--footer-left {
       padding-right:0;
@@ -417,11 +417,19 @@ a img {
   .l-header, .l-main, .l-footer {
     @include set-container-width(15);
   }
+  /*Languages*/
+  .l-region--header /* , .block--domain-nav-default, .block--lang-dropdown*/ {
+    @include span-columns(3, $break);
+  }
   // Logo und Bild
   .l-branding {
+    @include span-columns(3, $break);
     img {
       margin: 0 0 0 -5% !important;
     }
+  }
+  .petob {
+    @include span-columns(7 omega, $break);
   }
   //$grid-padding   : 0;
   .l-main {
@@ -440,7 +448,8 @@ a img {
       margin-left: 0;
       margin-top: 5px;
     }
-    .l-content { @include span-columns(9,$main-columns);
+    .l-content {
+      @include span-columns(9,$main-columns);
       @include push(3, $main-columns);
       background:$text_background;
       margin-top: 4.2em;

@@ -1,6 +1,8 @@
 <div class="headwrap">
   <header class="l-header" role="banner">
-    <?php print render($page['header']); ?>
+    <div class="l-languages">
+        <?php print render($page['header']); ?>
+    </div>
     <div class="l-branding">
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
@@ -17,6 +19,9 @@
           <h2 class="site-slogan"><?php print $site_slogan; ?></h2>
         <?php endif; ?>
       <?php endif; ?>
+    </div>
+    <div class="petob">
+      <?php print render($page['petob']); ?>
     </div>
     <?php print render($page['navigation']); ?>
   </header>

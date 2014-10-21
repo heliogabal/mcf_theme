@@ -5,6 +5,7 @@ template = 3col-layout
 
 ; Regions
 regions[header]         = Header
+regions[petob]            = Petition Oben
 regions[navigation]     = Navigation bar
 regions[highlighted]    = Highlighted
 regions[help]           = Help

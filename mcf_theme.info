@@ -11,6 +11,7 @@ stylesheets[all][] = css/styles.css
 stylesheets[all][] = css/font-awesome.min.css
 stylesheets[all][] = css/font-awesome-ie7.min.css
 regions[header] = Header
+regions[petob] = Petition Oben
 regions[navigation] = Navigation
 regions[highlighted] = Highlighted
 regions[help] = Help
