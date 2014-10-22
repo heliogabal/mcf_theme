@@ -1,3 +1,8 @@
+#block-follow-site {
+  span.follow-link-wrapper a {
+    float: right;
+    }
+  }
 #block-views-site-follow-block {
         a.follow-link {
         height: 34px;
@@ -7,7 +12,7 @@
         padding-right: 5px;
     }
     span.follow-link-wrapper a {
-    float: right !important;
+    float: right;
     display: block;
     /*background:url(../images/social.gif) no-repeat;
     overflow: hidden;
