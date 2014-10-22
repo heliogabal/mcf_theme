@@ -7,14 +7,14 @@
         padding-right: 5px;
     }
     span.follow-link-wrapper a {
-    float: right;
+    float: right !important;
     display: block;
     /*background:url(../images/social.gif) no-repeat;
     overflow: hidden;
     height: 50px;
     width: 52px;
     padding: 0;*/
-    padding-left: 32px;
+    padding-left: 28px;
     background-repeat: no-repeat;
   }
   .follow-link-wrapper-facebook a{

@@ -1834,14 +1834,14 @@ div.views-fluid-grid h3 {
   padding-right: 5px;
 }
 #block-views-site-follow-block span.follow-link-wrapper a {
-  float: right;
+  float: right !important;
   display: block;
   /*background:url(../images/social.gif) no-repeat;
   overflow: hidden;
   height: 50px;
   width: 52px;
   padding: 0;*/
-  padding-left: 32px;
+  padding-left: 28px;
   background-repeat: no-repeat;
 }
 #block-views-site-follow-block .follow-link-wrapper-facebook a {
