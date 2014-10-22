@@ -1831,6 +1831,7 @@ div.views-fluid-grid h3 {
   }*/
 }
 #block-views-site-follow-block a.follow-link {
+  float: right;
   height: 34px;
   line-height: 34px;
   margin-left: 5px;
