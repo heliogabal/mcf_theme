@@ -1,5 +1,12 @@
 #block-views-site-follow-block {
-    .follow-link-wrapper a {
+        a.follow-link {
+        height: 34px;
+        line-height: 34px;
+        margin-left: 5px;
+        padding-left: 28px;
+        padding-right: 5px;
+    }
+    span.follow-link-wrapper a {
     float: right;
     display: block;
     /*background:url(../images/social.gif) no-repeat;
