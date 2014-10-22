@@ -247,6 +247,9 @@
         width: 100%;
         @include at-breakpoint (7) {
         width: 40%;
+        ul {
+            padding-left: 1em;
+        }
     }
     }
     .ds-2col-fluid > .group-right {
