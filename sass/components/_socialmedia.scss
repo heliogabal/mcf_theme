@@ -1,9 +1,4 @@
-#block-follow-site {
-  span.follow-link-wrapper a {
-    float: right;
-    }
-  }
-#block-views-site-follow-block {
+#block-views-site-follow-block, #block-follow-site {
         a.follow-link {
         float: right;
         height: 34px;

@@ -1809,11 +1809,7 @@ div.views-fluid-grid h3 {
   margin-bottom: 1em;
 }
 
-#block-follow-site span.follow-link-wrapper a {
-  float: right;
-}
-
-#block-views-site-follow-block {
+#block-views-site-follow-block, #block-follow-site {
   /*.follow-link-wrapper-facebook a:hover{
     background-position: 5px -50px;
   }*/
@@ -1830,7 +1826,7 @@ div.views-fluid-grid h3 {
     background-position: -150px -50px;
   }*/
 }
-#block-views-site-follow-block a.follow-link {
+#block-views-site-follow-block a.follow-link, #block-follow-site a.follow-link {
   float: right;
   height: 34px;
   line-height: 34px;
@@ -1838,7 +1834,7 @@ div.views-fluid-grid h3 {
   padding-left: 28px;
   padding-right: 5px;
 }
-#block-views-site-follow-block span.follow-link-wrapper a {
+#block-views-site-follow-block span.follow-link-wrapper a, #block-follow-site span.follow-link-wrapper a {
   float: right;
   display: block;
   /*background:url(../images/social.gif) no-repeat;
@@ -1849,15 +1845,15 @@ div.views-fluid-grid h3 {
   padding-left: 28px;
   background-repeat: no-repeat;
 }
-#block-views-site-follow-block .follow-link-wrapper-facebook a {
+#block-views-site-follow-block .follow-link-wrapper-facebook a, #block-follow-site .follow-link-wrapper-facebook a {
   /*background-position: 5px 0;*/
   background: url("/sites/all/modules/contrib/follow/icons/paulrobertlloyd32/icon-facebook.png") no-repeat;
 }
-#block-views-site-follow-block .follow-link-wrapper-twitter a {
+#block-views-site-follow-block .follow-link-wrapper-twitter a, #block-follow-site .follow-link-wrapper-twitter a {
   /*background-position: -35px 0;*/
   background-image: url("/sites/all/modules/contrib/follow/icons/paulrobertlloyd32/icon-twitter.png") no-repeat;
 }
-#block-views-site-follow-block .follow-link-wrapper-youtube a {
+#block-views-site-follow-block .follow-link-wrapper-youtube a, #block-follow-site .follow-link-wrapper-youtube a {
   /*background-position: -90px 0;*/
   background-image: url("/sites/all/modules/contrib/follow/icons/paulrobertlloyd32/icon-youtube.png") no-repeat;
 }
