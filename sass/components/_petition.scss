@@ -83,12 +83,18 @@
     line-height: 1;
 }
 
-.webform-client-form-15 .form-actions {
+.webform-client-form-15 .form-actions,
+.webform-client-form-15--2 .form-actions {
     @include at-breakpoint ($tablet) {
-    float: right;
-    text-align: right;
-    margin: -.7em 2% 0 0;
-    width: 46%;
+        float: right;
+        text-align: right;
+        margin: -.7em 2% 10px 0;
+        width: 46%;
+    }
+    @include at-breakpoint ($break) {
+        float: none;
+        margin: 0;
+        width: 100%;
     }
     input {
     //@include sassy-button("simple", 0, 12px, #83BE26, #83BE26, #fff, "false");
@@ -315,9 +321,9 @@
         width: 100%;
         margin-top: .3em;
     }
-    .webform-client-form-15 .form-actions {
+/*    .webform-client-form-15 .form-actions {
         position: static;
-       }
+       }*/
     .form-submit {
         width: 93%;
         max-width: 250px;

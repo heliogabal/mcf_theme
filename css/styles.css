@@ -1299,14 +1299,24 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
 }
 
 @media (min-width: 49em) {
-  .webform-client-form-15 .form-actions {
+  .webform-client-form-15 .form-actions,
+  .webform-client-form-15--2 .form-actions {
     float: right;
     text-align: right;
-    margin: -.7em 2% 0 0;
+    margin: -.7em 2% 10px 0;
     width: 46%;
   }
 }
-.webform-client-form-15 .form-actions input {
+@media (min-width: 74em) {
+  .webform-client-form-15 .form-actions,
+  .webform-client-form-15--2 .form-actions {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+}
+.webform-client-form-15 .form-actions input,
+.webform-client-form-15--2 .form-actions input {
   background: linear-gradient(#83be26, #83be26) repeat scroll 0 0 rgba(0, 0, 0, 0);
   border: 0 none;
   border-radius: 0;
@@ -1480,6 +1490,9 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   background: #fff;
   font-size: .75em;
   float: left;
+  /*    .webform-client-form-15 .form-actions {
+          position: static;
+         }*/
 }
 .petob .ds-2col-fluid > .group-left {
   width: 100%;
@@ -1566,9 +1579,6 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
 .petob .select-or-other-other {
   width: 100%;
   margin-top: .3em;
-}
-.petob .webform-client-form-15 .form-actions {
-  position: static;
 }
 .petob .form-submit {
   width: 93%;
