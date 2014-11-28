@@ -5,4 +5,4 @@
 # all of the gems and versions that it installed to Gemfile.lock. Hence, the
 # Gemfile.lock file is is environemnt specific and therefore should not be
 # commited either.
-Gemfile.lock
+#Gemfile.lock
