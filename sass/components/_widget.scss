@@ -104,10 +104,18 @@ body#widget, #block-views-petitions-block-1 {
         width: 50%;
         margin: 1.7em 0;
     }
+    .webform-confirmation {
+	position: absolute;
+	background: #fff;
+	z-index: 10;
+	margin-left: -5px;
+	height: 80%;
+    }
     .field--name-field-petition-foto {
         position:absolute;
         bottom:0;
         right:1em;
+	z-index: 11;
     }
     .field--name-field-petition-addendum {
         font-size:11px;
