@@ -755,7 +755,7 @@ body#widget ol li a, #block-views-petitions-block-1 ol li a {
 body#widget .field--name-title-field, #block-views-petitions-block-1 .field--name-title-field {
   display: none;
 }
-body#widget .webform-client-form-15, #block-views-petitions-block-1 .webform-client-form-15 {
+body#widget .webform-client-form-15, body#widget .webform-client-form-15--2, #block-views-petitions-block-1 .webform-client-form-15, #block-views-petitions-block-1 .webform-client-form-15--2 {
   margin: 1em 0;
   padding-bottom: 1em;
   width: 45%;
@@ -802,10 +802,17 @@ body#widget #webform-component-i-want-more-info-by-email, #block-views-petitions
   float: left;
   width: 100%;
 }
-body#widget .webform-client-form-15 .form-actions, #block-views-petitions-block-1 .webform-client-form-15 .form-actions {
+body#widget .webform-client-form-15 .form-actions,
+body#widget .webform-client-form-15--2 .form-actions, #block-views-petitions-block-1 .webform-client-form-15 .form-actions,
+#block-views-petitions-block-1 .webform-client-form-15--2 .form-actions {
   float: left;
-  margin: 0 2% .5em 0;
+  margin: 0 0 .5em 0;
   text-align: left;
+}
+body#widget .webform-client-form-15 .form-actions input,
+body#widget .webform-client-form-15--2 .form-actions input, #block-views-petitions-block-1 .webform-client-form-15 .form-actions input,
+#block-views-petitions-block-1 .webform-client-form-15--2 .form-actions input {
+  margin-top: .5em;
 }
 body#widget .webform-component-select, #block-views-petitions-block-1 .webform-component-select {
   float: left;
@@ -1184,20 +1191,20 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   margin-bottom: 1em;
 }
 
-.block--block--2, .block--block-2 {
+.block--block--14, .block--block-14 {
   font-size: 12px;
   display: table-cell;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.block--block--2 img, .block--block-2 img {
+.block--block--14 img, .block--block-14 img {
   vertical-align: middle;
   margin-bottom: -.7em;
 }
-.block--block--2 p, .block--block--2 p span, .block--block-2 p, .block--block-2 p span {
+.block--block--14 p, .block--block--14 p span, .block--block-14 p, .block--block-14 p span {
   vertical-align: bottom;
 }
-.block--block--2 p span, .block--block-2 p span {
+.block--block--14 p span, .block--block-14 p span {
   margin-bottom: 1px;
   display: inline-block;
 }
