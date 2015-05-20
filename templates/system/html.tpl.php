@@ -67,6 +67,22 @@ var _prum = [['id', '53466348abe53d4e119e7904'],
     s.parentNode.insertBefore(p, s);
 })();
 </script>
+<!-- Facebook Conversion Code for facebook_zaehler.gif -->
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', '6026482767193', {'value':'0.01','currency':'EUR'}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6026482767193&amp;cd[value]=0.01&amp;cd[currency]=EUR&amp;noscript=1" /></noscript>
 </head>
 <body<?php print $attributes;?>>
   <a href="#main-content-anchor" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
