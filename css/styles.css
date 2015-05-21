@@ -1789,6 +1789,11 @@ body.cke_ltr, body.cke_editable {
   clear: none;
 }
 
+/* disable weird type:application/x-pdf line */
+.file-icon > p {
+  display: none;
+}
+
 /* Co-Sponsors View */
 .co-sponsors {
   float: left;
