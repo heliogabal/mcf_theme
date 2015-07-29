@@ -89,6 +89,10 @@ img {
 }
 
 /* Image captions */
+.caption {
+  display: none;
+}
+
 .caption p {
   font-size: .8em;
   font-weight: normal;
@@ -1998,4 +2002,21 @@ div.views-fluid-grid h3 {
 .flexslider .slides > li {
   overflow-y: auto;
   position: relative;
+}
+
+.tabledrag-handle {
+  cursor: move;
+  display: block;
+  float: left;
+  height: 25px;
+  overflow: visible;
+  text-decoration: none;
+  width: 25px;
+}
+
+.tabledrag-handle .handle {
+  height: 25px;
+  margin: -0.4em 0;
+  padding: 0.4em;
+  width: 20px;
 }

@@ -62,6 +62,9 @@ img {
   height: auto;
 }
 /* Image captions */
+.caption {
+  display: none;
+}
 .caption p {
   font-size: .8em;
   font-weight: normal;
