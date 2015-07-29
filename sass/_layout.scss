@@ -259,13 +259,13 @@ a img {
   }
 }
 .block--block--1, .block--block-1 {
-  padding-left:$column-width+$gutter-width;
-  background:url(../images/eu.png) no-repeat;
+  padding-left: 90px;
+  background:url(../images/eu_flag.png) 0 4px no-repeat;
   font-size: $small;
   margin-top: 2em;
-  line-height:1.416;
-  min-height:55px;
-  max-width:450px;
+  line-height: 1.416;
+  min-height: 55px;
+  max-width: 450px;
 }
 .l-region--footer-left {
   $main-columns: 10;
