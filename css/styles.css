@@ -89,10 +89,9 @@ img {
 }
 
 /* Image captions */
-.caption {
+/*.caption {
   display: none;
-}
-
+}*/
 .caption p {
   font-size: .8em;
   font-weight: normal;
