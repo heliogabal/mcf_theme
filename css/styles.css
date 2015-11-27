@@ -1955,6 +1955,11 @@ div.views-fluid-grid h3 {
   margin-top: 0;
 }
 
+.box {
+  background: #ddd;
+  padding: .5em 1em;
+}
+
 .block--search-form {
   margin: .65em 0 0 0;
 }
