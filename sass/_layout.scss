@@ -176,7 +176,7 @@ a img {
   }
 // Logo und Bild
   .l-branding {
-    @include span-columns(10 omega, $main-columns);
+    @include span-columns(3 omega, $main-columns);
     background: #fff;
     img {
       margin:0;
@@ -293,9 +293,9 @@ a img {
   .l-page {
   padding:0 2em;
 }
-  /*.headwrap {
+  .headwrap {
     background: url(../images/welle_1920px.png) center bottom repeat-x #fff;
-  }*/
+  }
   .l-footer {
     .l-region--footer-left {
       padding-right:0;
@@ -428,9 +428,9 @@ a img {
       margin: 0 0 0 -5% !important;
     }
   }
-  .petob {
+  /*.petob {
     @include span-columns(7 omega, $break);
-  }
+  }*/
   //$grid-padding   : 0;
   .l-main {
     margin-top:-1.5em;

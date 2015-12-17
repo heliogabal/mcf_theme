@@ -292,7 +292,7 @@ a img {
   padding: 0;
 }
 .l-header .l-branding {
-  width: 100%;
+  width: 28.57143%;
   float: right;
   margin-right: 0;
   *margin-left: -1em;
@@ -466,9 +466,10 @@ a img {
     padding: 0 2em;
   }
 
-  /*.headwrap {
-    background: url(../images/welle_1920px.png) center bottom repeat-x #fff;
-  }*/
+  .headwrap {
+    background: url(../images/welle_1920px.png) center bottom repeat-x white;
+  }
+
   .l-footer .l-region--footer-left {
     padding-right: 0;
   }
@@ -622,12 +623,9 @@ a img {
     margin: 0 0 0 -5% !important;
   }
 
-  .petob {
-    width: 45.94595%;
-    float: right;
-    margin-right: 0;
-  }
-
+  /*.petob {
+    @include span-columns(7 omega, $break);
+  }*/
   .l-main {
     margin-top: -1.5em;
     width: 100%;
@@ -706,6 +704,10 @@ a img {
  *       CSS. Exposed filter forms, views pagers and other views elements are
  *       also good candidates for components.
  ******************************************************************************/
+.site-logo {
+  margin: 0 10em 0 7em;
+}
+
 .site-slogan {
   color: white;
   font-size: .95em;
@@ -1242,6 +1244,7 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   }
 }
 .group-petitionbox h3 {
+  display: none;
   text-align: center;
   font-size: 1.25em;
   margin-bottom: 1em;
@@ -1249,6 +1252,7 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
 }
 
 .webform-client-form {
+  display: none;
   width: 75%;
   margin-left: 48px;
   margin-top: 2em;

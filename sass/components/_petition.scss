@@ -14,6 +14,7 @@
     /*float: left;*/
     position: relative;
     h3 {
+        display: none;
         text-align: center;
         font-size: 1.25em;
         margin-bottom: 1em;
@@ -21,6 +22,7 @@
     }
 }
 .webform-client-form {
+    display: none;
     width: 75%;
     margin-left: 48px;
     margin-top: 2em;
