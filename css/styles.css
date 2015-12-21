@@ -882,6 +882,7 @@ body#widget .horizontal-tabs, #block-views-petitions-block-1 .horizontal-tabs {
 }
 body#widget .horizontal-tabs .horizontal-tabs-pane, #block-views-petitions-block-1 .horizontal-tabs .horizontal-tabs-pane {
   margin: 0 0 1em 0;
+  padding-bottom: 3em;
 }
 body#widget .horizontal-tabs ul.horizontal-tabs-list, #block-views-petitions-block-1 .horizontal-tabs ul.horizontal-tabs-list {
   background: #eee;
