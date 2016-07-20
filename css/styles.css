@@ -1252,7 +1252,7 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   text-transform: uppercase;
 }
 
-.webform-client-form {
+#webform-client-form-15 .webform-client-form {
   display: none;
   width: 75%;
   margin-left: 48px;
@@ -1260,7 +1260,7 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   padding-bottom: 2em;
   overflow: hidden;
 }
-.webform-client-form label {
+#webform-client-form-15 .webform-client-form label {
   font-weight: normal;
   font-size: 12px;
   top: 1px;
@@ -1279,12 +1279,12 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   width: 81%;
 }
 
-.webform-component {
+#webform-client-form-15 .webform-component {
   margin: 0 4% .5em 0;
   position: relative;
 }
 @media (min-width: 49em) {
-  .webform-component {
+  #webform-client-form-15 .webform-component {
     float: left;
     width: 46%;
   }
@@ -1356,7 +1356,7 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   border: 0;
 }
 
-.webform-component-markup {
+#webform-client-form-15 .webform-component-markup {
   position: absolute;
   bottom: 0;
   margin: 0;
@@ -1375,6 +1375,10 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   margin-top: 1em;
   font-size: 12px;
   line-height: 1.416;
+}
+
+#webform-ajax-wrapper-15 {
+  display: none;
 }
 
 .block--views-ds-progress-block-block {
