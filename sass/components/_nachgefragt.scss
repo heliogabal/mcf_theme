@@ -1,0 +1,38 @@
+
+.webform-client-form-938 {
+	padding: .25em;
+	background: #ffb900;
+	border-radius: 3px;
+	.form-actions {
+		text-align: center;
+	}
+	.webform-submit {
+		width: 50%;
+		padding: 1em 2em;
+	}
+}
+.webform-component--vorname, 
+.webform-component--nachname,
+.webform-component--plz,
+.webform-component--ort,
+.webform-component--schokoladenunternehmen,
+.webform-component--e-mail {
+	float: left;
+	width: 45%;
+	clear: none;
+	margin: .5em 0;
+}
+.webform-component--schokoladenunternehmen {
+	text-align: left;
+}
+#webform-client-form-938 div.webform-component:nth-child(odd) {
+	margin-right: 5%;
+	clear: left;
+}
+.webform-component--nachricht {
+	clear: left;
+}
+#edit_submitted_schokoladenunternehmen_chosen,
+.description {
+	width: 93% !important;
+}
