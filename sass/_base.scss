@@ -81,3 +81,16 @@ h2, h4 {
 h2 + p, h4 + p, h2 + h4 {
   margin-top: 0;
 }
+
+.l-content ol li {
+  display: list-item !important;
+  margin-left: 1em;
+  list-style: inherit !important;
+  a {
+    display: inline-block !important;
+    vertical-align: top !important;
+    line-height: inherit !important;
+    font-weight: bold !important;
+    text-decoration: underline !important;
+  }
+}

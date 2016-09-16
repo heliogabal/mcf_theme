@@ -110,6 +110,19 @@ h2 + p, h4 + p, h2 + h4 {
   margin-top: 0;
 }
 
+.l-content ol li {
+  display: list-item !important;
+  margin-left: 1em;
+  list-style: inherit !important;
+}
+.l-content ol li a {
+  display: inline-block !important;
+  vertical-align: top !important;
+  line-height: inherit !important;
+  font-weight: bold !important;
+  text-decoration: underline !important;
+}
+
 /*******************************************************************************
  * _layout.scss
  *
@@ -1109,6 +1122,7 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   list-style-image: none;
   list-style: none;
   padding: 1em;
+  margin-left: -.3em;
 }
 #block-system-main-menu ul li {
   text-align: right;
@@ -2098,4 +2112,10 @@ div.views-fluid-grid h3 {
 #edit_submitted_schokoladenunternehmen_chosen,
 .description {
   width: 93% !important;
+}
+
+.block--block-15 {
+  background: #fff;
+  padding: .1em 1em;
+  margin-bottom: 1em;
 }
