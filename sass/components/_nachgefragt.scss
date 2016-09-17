@@ -11,7 +11,7 @@
 		padding: 1em 2em;
 	}
 }
-.webform-component--vorname, 
+.webform-component--vorname,
 .webform-component--nachname,
 .webform-component--plz,
 .webform-component--ort,
@@ -50,4 +50,8 @@
 	background: #fff;
 	padding:.1em 1em;
 	margin-bottom: 1em;
+}
+textarea {
+  width: 100%;
+  min-height: 140px;
 }

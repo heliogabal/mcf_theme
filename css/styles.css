@@ -2119,3 +2119,8 @@ div.views-fluid-grid h3 {
   padding: .1em 1em;
   margin-bottom: 1em;
 }
+
+textarea {
+  width: 100%;
+  min-height: 140px;
+}
