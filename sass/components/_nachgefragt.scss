@@ -1,10 +1,14 @@
 /*.block--system-main-menu ul li:nth-child(5) {
   display: none;
 }*/
-.domain-de-makechocolatefair-org.page-node-950 h1,
+pre {
+  width: 100%;
+  overflow-x: scroll;
+}
+/*
 .domain-de-makechocolatefair-org.page-node-950 #block-webform-client-block-938 img{
   display:none;
-}
+}*/
 .domain-de-makechocolatefair-org.page-node-950 .block__content h2.nachgehakt {
   font-size: 1.5em;
   margin-top: 0;
@@ -13,6 +17,11 @@
 }
 .page-node-938 h2.nachgehakt {
   display: none;
+}
+.page-node-942 table {
+  margin-top: 2em !important;
+  float: left;
+
 }
 .page-node-938 .block--system-main-menu ul li:nth-child(5),
 .page-node-943 .block--system-main-menu ul li:nth-child(5),

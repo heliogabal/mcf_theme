@@ -1831,6 +1831,67 @@ body.cke_ltr, body.cke_editable {
   display: none;
 }
 
+.ui-accordion-icons .ui-accordion-header a {
+  padding-left: 0 !important;
+}
+
+.ui-accordion .ui-accordion-content {
+  padding: 0 25px 0 0px !important;
+}
+
+.ui-tabs {
+  padding: 0px;
+  background: none;
+  border-width: 0px;
+}
+
+.ui-tabs .ui-tabs-nav {
+  padding-left: 0px;
+  background: transparent;
+  border-width: 1px;
+  border-bottom: 0;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  white-space: normal !important;
+}
+
+.ui-tabs .ui-tabs-panel {
+  background: #f5f3e5 url(http://code.jquery.com/ui/1.8.23/themes/south-street/images/ui-bg_highlight-hard_100_f5f3e5_1x100.png) repeat-x scroll 50% top;
+  border-width: 0px 1px 1px 1px;
+}
+
+.ui-tabs .ui-state-active a {
+  background: #83BE26;
+  color: #fff;
+}
+
+.ui-accordion .ui-state-active a {
+  background: none;
+  color: #000;
+}
+
+.ui-tabs-nav {
+  border: 0;
+}
+.ui-tabs-nav .ui-state-active {
+  border: 1px solid #bbb !important;
+}
+.ui-tabs-nav .ui-state-active.ui-state-hover {
+  border: 1px solid #bbb !important;
+}
+.ui-tabs-nav .ui-state-hover {
+  border: 1px solid #000 !important;
+}
+.ui-tabs-nav li.ui-state-default {
+  border: 1px solid #bbb !important;
+  border-bottom: 0 !important;
+}
+
+.jquery-ui-filter-tabs-container {
+  border: 1px solid #bbb !important;
+}
+
 /* Co-Sponsors View */
 .co-sponsors {
   float: left;
@@ -2062,11 +2123,15 @@ div.views-fluid-grid h3 {
 /*.block--system-main-menu ul li:nth-child(5) {
   display: none;
 }*/
-.domain-de-makechocolatefair-org.page-node-950 h1,
-.domain-de-makechocolatefair-org.page-node-950 #block-webform-client-block-938 img {
-  display: none;
+pre {
+  width: 100%;
+  overflow-x: scroll;
 }
 
+/*
+.domain-de-makechocolatefair-org.page-node-950 #block-webform-client-block-938 img{
+  display:none;
+}*/
 .domain-de-makechocolatefair-org.page-node-950 .block__content h2.nachgehakt {
   font-size: 1.5em;
   margin-top: 0;
@@ -2076,6 +2141,11 @@ div.views-fluid-grid h3 {
 
 .page-node-938 h2.nachgehakt {
   display: none;
+}
+
+.page-node-942 table {
+  margin-top: 2em !important;
+  float: left;
 }
 
 .page-node-938 .block--system-main-menu ul li:nth-child(5),
