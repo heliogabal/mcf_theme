@@ -85,3 +85,17 @@ textarea {
   width: 100%;
   min-height: 140px;
 }
+/* Tabelle  #nachgehakt Ergebnisse */
+.tablesaw p {
+  margin: 0;
+}
+.tablesaw-stack thead tr th {
+  background: #7B3F06;
+  color: #fff;
+}
+.tablesaw-stack tbody tr.even {
+  background: #dfdfdf;
+}
+.tablesaw-stack tbody tr.odd {
+  background: #ffb900;
+}

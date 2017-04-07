@@ -45,3 +45,6 @@ function mcf_theme_imce_user_page($variables) {
   return '<iframe src="' . url('imce', $options) . '" frameborder="0" style="border: 1px solid #eee; width: 99%; height: 720px" class="imce-frame"></iframe>';
 }
 
+function mcf_theme_js_alter(&$js) {
+    unset($js['misc/tableheader.js']);
+}
