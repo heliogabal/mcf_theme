@@ -153,8 +153,8 @@ div.quickbar-links, div#quickbar, div#quickbar * {
 .l-main,
 .l-footer {
   *zoom: 1;
-  max-width: 75em;
-  _width: 75em;
+  max-width: 74em;
+  _width: 74em;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -2238,6 +2238,9 @@ textarea {
 /* Tabelle  #nachgehakt Ergebnisse */
 .tablesaw p {
   margin: 0;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .tablesaw-stack thead tr th {
@@ -2251,4 +2254,11 @@ textarea {
 
 .tablesaw-stack tbody tr.odd {
   background: #ffb900;
+}
+
+/* Media query to show as a standard table at 1158px (72em x 16px) or wider */
+@media (min-width: 72em) {
+  .tablesaw-stack tr {
+    display: table-row;
+  }
 }

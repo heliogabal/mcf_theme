@@ -88,6 +88,9 @@ textarea {
 /* Tabelle  #nachgehakt Ergebnisse */
 .tablesaw p {
   margin: 0;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 .tablesaw-stack thead tr th {
   background: #7B3F06;
@@ -98,4 +101,12 @@ textarea {
 }
 .tablesaw-stack tbody tr.odd {
   background: #ffb900;
+}
+
+/* Media query to show as a standard table at 1158px (72em x 16px) or wider */
+
+@media (min-width: 72em) {
+  .tablesaw-stack tr {
+    display: table-row;
+  }
 }
