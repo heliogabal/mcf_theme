@@ -949,6 +949,11 @@ h2.widget-title {
   min-height: 0;
 }
 
+iframe#widgets-0 {
+  width: 100%;
+  min-height: 100vmax;
+}
+
 /* Action Links Blocks */
 .block--block-10 a, .block--block-11 a, .block--block-12 a {
   text-decoration: none;
