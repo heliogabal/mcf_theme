@@ -985,7 +985,7 @@ iframe#widgets-0 {
   max-width: calc(100% - 140px);
 }
 
-.ui-accordion .ui-accordion-header .ui-icon {
+#jquery-ui-filter .ui-icon {
   right: 0 !important;
   left: unset !important;
   margin-top: -15px;
