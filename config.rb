@@ -18,7 +18,7 @@ javascripts_dir = "js"
 
 # Require any additional compass plugins installed on your system.
 require 'compass-normalize'
-require 'rgbapng'
+#require 'rgbapng'
 require 'toolkit'
 require 'susy'
 require 'singularitygs'
