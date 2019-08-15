@@ -25,7 +25,7 @@ body#widget, #block-views-petitions-block-1 {
             a {
                 color: #fff;
                 text-decoration: none;
-	padding-left: 0 !important;
+	            padding-left: 0 !important;
             }
         }
     }
@@ -81,7 +81,7 @@ body#widget, #block-views-petitions-block-1 {
     .select-or-other-other {
         max-width: 233px;
     	width: 93%;
-	text-align: left;
+	    text-align: left;
 	}
     #webform-component-i-want-more-info-by-email {
         margin: 0;
@@ -119,7 +119,7 @@ body#widget, #block-views-petitions-block-1 {
         position:absolute;
         bottom:0;
         right:1em;
-	z-index: 11;
+	    z-index: 11;
     }
     .field--name-field-petition-addendum {
         font-size:11px;
@@ -136,9 +136,9 @@ body#widget, #block-views-petitions-block-1 {
     .ui-accordion .ui-accordion-content {
         padding: 0 10px !important;
     }
-    .views-row a {
-        padding-left:50px;
-    }
+    /*.views-row a {
+        padding-left: 50px;
+    }*/
     .views-row-1 .views-accordion-header a {
         background: url(../images/Demand-Icon-1.png) left center no-repeat;
     }
@@ -159,8 +159,10 @@ body#widget, #block-views-petitions-block-1 {
         padding: 0;
         position: relative;
         .horizontal-tabs-pane {
-            margin: 0 0 1em 0;
-            padding-bottom: 3em;
+            margin: 0;
+            padding-bottom: 5em;
+            background: url(https://de.makechocolatefair.org/sites/makechocolatefair.org/files/mcf-logo_0.png) no-repeat bottom right;
+            background-size: auto 100px;
         }
         ul.horizontal-tabs-list {
             background: #eee;
@@ -191,4 +193,14 @@ body#widget, #block-views-petitions-block-1 {
             }
         }
     }
+}
+
+h2.widget-title {
+    background: #83BE26;
+    border: 1px solid #83BE26;
+    color: #fff;
+    margin: 0;
+    padding: .5em 1em;
+    text-align: left;
+    min-height: 0;
 }

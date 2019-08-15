@@ -7,7 +7,7 @@
     .views-row-1 h2 {
         background: url(../images/Demand-Icon-1.png) left center no-repeat;
     }
-    .views-row-2 h2{
+    .views-row-2 h2 {
         background: url(../images/Demand-Icon-2.png) left center no-repeat;
     }
     .views-row-3 h2 {
@@ -26,8 +26,12 @@
     right: 0.5em !important;
     left:auto !important;
 }
-.ui-accordion-icons .ui-accordion-header a {
-    padding-left: 3.5 !important;
+.ui-accordion .ui-accordion-icons {
+    padding-left: unset;
+}
+.ui-accordion-icons .ui-accordion-header a,
+.front .l-content .views-row a {
+    padding-left: 3.5em !important;
     min-height: 44px;
 }
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {

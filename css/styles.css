@@ -744,6 +744,9 @@ body#widget, #block-views-petitions-block-1 {
   margin: 0;
   font-size: 12px;
   line-height: 1.2;
+  /*.views-row a {
+      padding-left: 50px;
+  }*/
 }
 body#widget .node--petition-widg, #block-views-petitions-block-1 .node--petition-widg {
   width: 100%;
@@ -880,9 +883,6 @@ body#widget #demands, #block-views-petitions-block-1 #demands {
 body#widget .ui-accordion .ui-accordion-content, #block-views-petitions-block-1 .ui-accordion .ui-accordion-content {
   padding: 0 10px !important;
 }
-body#widget .views-row a, #block-views-petitions-block-1 .views-row a {
-  padding-left: 50px;
-}
 body#widget .views-row-1 .views-accordion-header a, #block-views-petitions-block-1 .views-row-1 .views-accordion-header a {
   background: url(../images/Demand-Icon-1.png) left center no-repeat;
 }
@@ -904,8 +904,10 @@ body#widget .horizontal-tabs, #block-views-petitions-block-1 .horizontal-tabs {
   position: relative;
 }
 body#widget .horizontal-tabs .horizontal-tabs-pane, #block-views-petitions-block-1 .horizontal-tabs .horizontal-tabs-pane {
-  margin: 0 0 1em 0;
-  padding-bottom: 3em;
+  margin: 0;
+  padding-bottom: 5em;
+  background: url(https://de.makechocolatefair.org/sites/makechocolatefair.org/files/mcf-logo_0.png) no-repeat bottom right;
+  background-size: auto 100px;
 }
 body#widget .horizontal-tabs ul.horizontal-tabs-list, #block-views-petitions-block-1 .horizontal-tabs ul.horizontal-tabs-list {
   background: #eee;
@@ -935,6 +937,16 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected a:hover, #block
 body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-views-petitions-block-1 .horizontal-tabs ul.horizontal-tabs-list li.selected strong {
   color: #fff;
   border: 0;
+}
+
+h2.widget-title {
+  background: #83BE26;
+  border: 1px solid #83BE26;
+  color: #fff;
+  margin: 0;
+  padding: .5em 1em;
+  text-align: left;
+  min-height: 0;
 }
 
 /* Action Links Blocks */
@@ -1685,8 +1697,13 @@ body#widget .horizontal-tabs ul.horizontal-tabs-list li.selected strong, #block-
   left: auto !important;
 }
 
-.ui-accordion-icons .ui-accordion-header a {
-  padding-left: 3.5 !important;
+.ui-accordion .ui-accordion-icons {
+  padding-left: unset;
+}
+
+.ui-accordion-icons .ui-accordion-header a,
+.front .l-content .views-row a {
+  padding-left: 3.5em !important;
   min-height: 44px;
 }
 
