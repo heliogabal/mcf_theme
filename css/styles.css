@@ -954,7 +954,7 @@ iframe#widgets-0 {
   min-height: 100vmax;
 }
 
-.view-id-petitions .webform-client-form div {
+.view-id-petitions .webform-client-form > div {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -962,10 +962,12 @@ iframe#widgets-0 {
 }
 
 .webform-component--betreff {
-  max-width: 70% !important;
-  display: flex;
+  max-width: 100% !important;
+  width: auto !important;
+  display: flex !important;
   flex-direction: column;
   justify-content: flex-start !important;
+  margin-bottom: 1rem !important;
 }
 
 .webform-component--betreff input {
@@ -973,8 +975,12 @@ iframe#widgets-0 {
   width: 100% !important;
 }
 
+.webform-component--nachricht {
+  width: 100%;
+}
+
 #edit-submitted-inkota-newsletter-abonnieren,
-.view-id-petitions .horizontal-tabs-pane p,
+.view-id-petitions .horizontal-tabs-pane p:last-of-type,
 .view-id-petitions .horizontal-tabs-pane ul {
   max-width: calc(100% - 140px);
 }
@@ -985,7 +991,8 @@ iframe#widgets-0 {
   margin-top: -15px;
 }
 
-.view-id-petitions .ui-accordion a {
+.view-id-petitions .ui-accordion a,
+.block--webform .ui-accordion a {
   border-bottom: 1px solid #83BE26;
   display: block;
 }
@@ -996,6 +1003,11 @@ iframe#widgets-0 {
 
 .view-id-petitions .form-actions {
   margin: 1rem 0 1.5rem;
+}
+
+#webform-client-form-1085 {
+  background: #F39200;
+  padding: 1rem;
 }
 
 /* Action Links Blocks */
