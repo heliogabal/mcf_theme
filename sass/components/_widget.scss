@@ -160,7 +160,7 @@ body#widget, #block-views-petitions-block-1 {
         position: relative;
         .horizontal-tabs-pane {
             margin: 0;
-            padding-bottom: 5em;
+            padding-bottom: 1em;
             background: url(https://de.makechocolatefair.org/sites/makechocolatefair.org/files/mcf-logo_0.png) no-repeat bottom right;
             background-size: auto 100px;
         }
@@ -207,4 +207,35 @@ h2.widget-title {
 iframe#widgets-0 {
     width: 100%;
     min-height: 100vmax;
+}
+
+#widget .webform-client-form div {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+.webform-component--betreff {
+    max-width: 70% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+}
+.webform-component--betreff input {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+#edit-submitted-inkota-newsletter-abonnieren,
+#widget .horizontal-tabs-pane p,
+#widget .horizontal-tabs-pane ul {
+    max-width: calc(100% - 150px);
+}
+#widget .ui-accordion .ui-accordion-header .ui-icon {
+    right: 0 !important;
+    left: unset !important;
+    margin-top: -15px;
+}
+#widget .ui-accordion a {
+    border-bottom: 1px solid #83BE26;
+    display: block;
 }
