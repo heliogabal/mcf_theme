@@ -231,11 +231,11 @@ iframe#widgets-0 {
     width: 100%;
 }
 #edit-submitted-inkota-newsletter-abonnieren,
-.view-id-petitions .horizontal-tabs-pane p:last-of-type,
+#widget .horizontal-tabs-pane p:last-of-type,
 .view-id-petitions .horizontal-tabs-pane ul {
     max-width: calc(100% - 140px);
 }
-.view-id-petitions .ui-accordion .ui-accordion-header .ui-icon {
+.ui-accordion .ui-accordion-header .ui-icon {
     right: 0 !important;
     left: unset !important;
     margin-top: -15px;
@@ -252,6 +252,6 @@ iframe#widgets-0 {
     margin: 1rem 0 1.5rem;
 }
 #webform-client-form-1085 {
-    background: #F39200;
+    background: #FFB900;
     padding: 1rem;
 }
