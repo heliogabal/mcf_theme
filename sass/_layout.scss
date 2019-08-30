@@ -291,10 +291,7 @@ a img {
 @include at-breakpoint($tablet_portrait) {
   .l-page {
     padding:0 2em;
-  }
-  .headwrap {
-    height: 190px;
-    background: #fff;
+    margin-top: -4em;
   }
   .l-footer {
     .l-region--footer-left {
@@ -309,11 +306,14 @@ a img {
 @include at-breakpoint($tablet) {
   .headwrap {
     background: url(../images/welle_1920px.png) center bottom repeat-x #fff;
+    height: 199px;
+    background: #fff;
   }
   @include with-grid-settings(10,4em,1em,0) {
   .l-page {
     @include set-container-width(15);
     padding: 0 $gutter-width;
+    margin: 0;
   }
   .l-header, .l-main, .l-footer {
     @include set-container-width(15);
