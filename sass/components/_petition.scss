@@ -336,12 +336,12 @@
 }
     @include at-breakpoint ($tablet-portrait) {
         .petob {
-        margin: 1em 2em 0;
+        margin: 0;
         }
     }
     @include at-breakpoint ($tablet) {
     .petob {
-        margin: 1em 1em 0;
+        margin: 0;
     }
 }
     @include at-breakpoint ($break) {

@@ -1719,12 +1719,12 @@ iframe#widgets-0 {
 
 @media (min-width: 24em) {
   .petob {
-    margin: 1em 2em 0;
+    margin: 0;
   }
 }
 @media (min-width: 49em) {
   .petob {
-    margin: 1em 1em 0;
+    margin: 0;
   }
 }
 @media (min-width: 74em) {
