@@ -151,12 +151,10 @@ a img {
   @include set-container-width(10);
   padding: 0;
 }
-.headwrap {
-  height: 199px;
-  background: url(../images/welle.png) center bottom repeat-x #fff;
-}
 .l-header {
   $main-columns: 10;
+  display: flex;
+  flex-direction: column;
   // Domain Switcher
   .block--domain-nav-default, .block--lang-dropdown,
   .block--locale-language-content {
@@ -413,6 +411,10 @@ a img {
   .l-region--sidebar-second {
     margin-top: 0 !important;
   }
+}
+.headwrap {
+  height: 199px;
+  background: url(../images/welle.png) center bottom repeat-x #fff;
 }
   .l-header, .l-main, .l-footer {
     @include set-container-width(15);

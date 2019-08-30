@@ -292,11 +292,10 @@ a img {
   }
 }
 
-.headwrap {
-  height: 199px;
-  background: url(../images/welle.png) center bottom repeat-x #fff;
+.l-header {
+  display: flex;
+  flex-direction: column;
 }
-
 .l-header .block--domain-nav-default, .l-header .block--lang-dropdown,
 .l-header .block--locale-language-content {
   padding: .5em 0 0 1em;
@@ -624,6 +623,11 @@ a img {
   }
   .front .l-region--sidebar-second {
     margin-top: 0 !important;
+  }
+
+  .headwrap {
+    height: 199px;
+    background: url(../images/welle.png) center bottom repeat-x #fff;
   }
 
   .l-header, .l-main, .l-footer {
