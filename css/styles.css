@@ -489,7 +489,8 @@ a img {
   }
 
   .headwrap {
-    background: url(../images/welle_1920px.png) center bottom repeat-x #fff;
+    height: 199px;
+    background: none;
   }
 
   .l-footer .l-region--footer-left {
@@ -500,6 +501,10 @@ a img {
   }
 }
 @media (min-width: 49em) {
+  .headwrap {
+    background: url(../images/welle_1920px.png) center bottom repeat-x #fff;
+  }
+
   .l-page {
     max-width: 74em;
     padding: 0 1em;
@@ -623,11 +628,6 @@ a img {
   }
   .front .l-region--sidebar-second {
     margin-top: 0 !important;
-  }
-
-  .headwrap {
-    height: 199px;
-    background: url(../images/welle.png) center bottom repeat-x #fff;
   }
 
   .l-header, .l-main, .l-footer {

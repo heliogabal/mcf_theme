@@ -289,10 +289,11 @@ a img {
 // Layout
 @include at-breakpoint($tablet_portrait) {
   .l-page {
-  padding:0 2em;
-}
+    padding:0 2em;
+  }
   .headwrap {
-    background: url(../images/welle_1920px.png) center bottom repeat-x #fff;
+    height: 199px;
+    background: none;
   }
   .l-footer {
     .l-region--footer-left {
@@ -305,6 +306,9 @@ a img {
 }
 
 @include at-breakpoint($tablet) {
+  .headwrap {
+    background: url(../images/welle_1920px.png) center bottom repeat-x #fff;
+  }
   @include with-grid-settings(10,4em,1em,0) {
   .l-page {
     @include set-container-width(15);
@@ -411,10 +415,6 @@ a img {
   .l-region--sidebar-second {
     margin-top: 0 !important;
   }
-}
-.headwrap {
-  height: 199px;
-  background: url(../images/welle.png) center bottom repeat-x #fff;
 }
   .l-header, .l-main, .l-footer {
     @include set-container-width(15);
