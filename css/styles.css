@@ -294,6 +294,7 @@ a img {
 
 .l-header {
   display: flex;
+  background: #fff;
   flex-direction: column;
 }
 .l-header .block--domain-nav-default, .l-header .block--lang-dropdown,
@@ -314,12 +315,8 @@ a img {
   padding: 0;
 }
 .l-header .l-branding {
-  width: 28.57143%;
-  float: right;
-  margin-right: 0;
-  *margin-left: -1em;
-  display: inline;
-  background: #fff;
+  /*@include span-columns(3 omega, $main-columns);*/
+  width: 100%;
 }
 .l-header .l-branding img {
   margin: 0;
@@ -1617,8 +1614,10 @@ iframe#widgets-0 {
 
 /* Petition Block oben */
 .petob {
-  margin: 1em 0 0;
-  padding: 1em;
+  margin: 0;
+  /* 1em 0 0 */
+  padding: 0;
+  /* 1em */
   background: #fff;
   font-size: .75em;
   float: left;

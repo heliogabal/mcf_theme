@@ -154,6 +154,7 @@ a img {
 .l-header {
   $main-columns: 10;
   display: flex;
+  background: #fff;
   flex-direction: column;
   // Domain Switcher
   .block--domain-nav-default, .block--lang-dropdown,
@@ -174,8 +175,8 @@ a img {
   }
 // Logo und Bild
   .l-branding {
-    @include span-columns(3 omega, $main-columns);
-    background: #fff;
+    /*@include span-columns(3 omega, $main-columns);*/
+    width: 100%;
     img {
       margin:0;
       /*float:left;*/

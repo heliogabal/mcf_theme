@@ -248,8 +248,8 @@
 
 /* Petition Block oben */
 .petob {
-    margin: 1em 0 0;
-    padding: 1em;
+    margin: 0; /* 1em 0 0 */
+    padding: 0; /* 1em */
     background: #fff;
     font-size: .75em;
     float: left;
