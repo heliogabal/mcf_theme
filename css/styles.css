@@ -502,7 +502,7 @@ a img {
   .l-page {
     max-width: 74em;
     padding: 0 1em;
-    margin: 0;
+    margin-top: 0;
   }
 
   .l-header, .l-main, .l-footer {

@@ -312,7 +312,7 @@ a img {
   .l-page {
     @include set-container-width(15);
     padding: 0 $gutter-width;
-    margin: 0;
+    margin-top: 0;
   }
   .l-header, .l-main, .l-footer {
     @include set-container-width(15);
