@@ -292,8 +292,8 @@ a img {
     padding:0 2em;
   }
   .headwrap {
-    height: 199px;
-    background: none;
+    height: 190px;
+    background: #fff;
   }
   .l-footer {
     .l-region--footer-left {
@@ -405,6 +405,9 @@ a img {
 }
 
 @include at-breakpoint($break) {
+.l-header {
+  display: block;
+}
 .front {
   .l-main {
     margin-top: 0 !important;

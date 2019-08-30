@@ -489,8 +489,8 @@ a img {
   }
 
   .headwrap {
-    height: 199px;
-    background: none;
+    height: 190px;
+    background: #fff;
   }
 
   .l-footer .l-region--footer-left {
@@ -620,6 +620,10 @@ a img {
   }*/
 }
 @media (min-width: 74em) {
+  .l-header {
+    display: block;
+  }
+
   .front .l-main {
     margin-top: 0 !important;
   }
@@ -731,10 +735,11 @@ a img {
  *       CSS. Exposed filter forms, views pagers and other views elements are
  *       also good candidates for components.
  ******************************************************************************/
-.site-logo {
-  margin: 0 10em 0 7em;
+@media (min-width: 74em) {
+  .site-logo {
+    margin: 0 10em 0 7em;
+  }
 }
-
 .site-slogan {
   color: #fff;
   font-size: .95em;

@@ -1,6 +1,8 @@
 // Site Slogan
-.site-logo {
-  margin: 0 10em 0 7em;
+@include at-breakpoint($break) {
+  .site-logo {
+    margin: 0 10em 0 7em;
+  }
 }
 .site-slogan {
     color:$text_invert;
