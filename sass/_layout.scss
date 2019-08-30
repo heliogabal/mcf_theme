@@ -321,6 +321,7 @@ a img {
   .l-header {
   $main-columns: 10;
   display: block;
+  background: transparent;
   // Domain Switcher
   .l-region--header /* , .block--domain-nav-default, .block--lang-dropdown*/ {
     @include span-columns(2, $main-columns);

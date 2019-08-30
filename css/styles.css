@@ -512,6 +512,7 @@ a img {
 
   .l-header {
     display: block;
+    background: transparent;
     /* .block--search-form {
        @include span-columns(2, $main-columns);
      }*/
