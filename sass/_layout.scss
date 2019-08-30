@@ -319,6 +319,7 @@ a img {
   }
   .l-header {
   $main-columns: 10;
+  display: block;
   // Domain Switcher
   .l-region--header /* , .block--domain-nav-default, .block--lang-dropdown*/ {
     @include span-columns(2, $main-columns);
@@ -405,9 +406,6 @@ a img {
 }
 
 @include at-breakpoint($break) {
-.l-header {
-  display: block;
-}
 .front {
   .l-main {
     margin-top: 0 !important;

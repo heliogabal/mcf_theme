@@ -515,6 +515,7 @@ a img {
   }
 
   .l-header {
+    display: block;
     /* .block--search-form {
        @include span-columns(2, $main-columns);
      }*/
@@ -620,10 +621,6 @@ a img {
   }*/
 }
 @media (min-width: 74em) {
-  .l-header {
-    display: block;
-  }
-
   .front .l-main {
     margin-top: 0 !important;
   }
