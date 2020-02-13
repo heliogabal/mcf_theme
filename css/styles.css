@@ -1303,6 +1303,7 @@ iframe#widgets-0 {
   display: table-cell;
   margin-top: 1em;
   margin-bottom: 1em;
+  float: right;
 }
 .block--block--14 img, .block--block-14 img {
   vertical-align: middle;
