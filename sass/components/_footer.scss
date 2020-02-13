@@ -2,7 +2,7 @@
 .footwrap {
     color: $footer_color;
     background: $footer_background;
-    overflow:hidden;
+    overflow: hidden;
 }
 // EU Blob
 .l-region--footer-left {
@@ -13,18 +13,18 @@
 .block--block--14, .block--block-14 {
   font-size: $small;
   display: table-cell;
-  margin-top:$gutter-width;
-  margin-bottom:$gutter-width;
+  margin-top: $gutter-width;
+  margin-bottom: $gutter-width;
   float: right;
   img {
     vertical-align: middle;
-    margin-bottom:-.7em;
+    margin-bottom: -.7em;
   }
   p, p span{
     vertical-align: bottom;
   }
   p span {
-    margin-bottom:1px;
+    margin-bottom: 1px;
     display: inline-block;
   }
 }
@@ -32,7 +32,7 @@
 
 .footer-bottom {
   ul {
-    float:left;
+    float: left;
     margin-top: 2em;
   }
   li {
