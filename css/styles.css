@@ -1001,6 +1001,7 @@ iframe#widgets-0 {
 
 #edit-submitted-inkota-newsletter-abonnieren {
   margin: .5rem 0;
+  max-width: none;
 }
 
 .view-id-petitions .form-actions {
@@ -1011,6 +1012,10 @@ iframe#widgets-0 {
 .page-node-1085 #webform-client-form-1085 {
   background: #FFB900;
   padding: 1rem;
+}
+
+.webform-client-form-1144 .webform-submit {
+  margin: 1rem 0 2rem;
 }
 
 /* Action Links Blocks */
@@ -2272,13 +2277,24 @@ pre {
 .webform-component--schokoladenunternehmen,
 .webform-component--e-mail {
   float: left;
-  width: 45%;
+  width: 50%;
   clear: none;
-  margin: .5em 0;
+  margin: .5em 0 0 0;
 }
 
 .webform-component--schokoladenunternehmen {
   text-align: left;
+  float: right;
+}
+
+.webform-component--vorname,
+.webform-component--schokoladenunternehmen {
+  margin-top: 1rem;
+}
+
+.webform-component--inkota-newsletter-abonnieren {
+  clear: left;
+  padding-top: 1rem;
 }
 
 #webform-client-form-938 div.webform-component:nth-child(odd) {
@@ -2316,6 +2332,11 @@ pre {
 textarea {
   width: 100%;
   min-height: 140px;
+}
+
+textarea.message {
+  min-height: 23rem;
+  overflow: auto;
 }
 
 /* Tabelle  #nachgehakt Ergebnisse */
